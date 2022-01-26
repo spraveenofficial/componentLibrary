@@ -7,6 +7,7 @@
 body {
   box-sizing: border-box;
   font-family: "Nunito sans", sans-serif;
+  overflow: hidden;
 }
 
 nav {
@@ -47,20 +48,41 @@ nav .menu a {
   display: flex;
   flex-direction: column;
 }
-.hero h1{
+.hero h1 {
   font-size: 40px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.hero p{
+.hero p {
   font-weight: 600;
   font-size: 18px;
 }
 
+/* Style for page layout */
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 0px 20px;
+  height: 100vh;
+}
+.main div:nth-child(1) {
+  flex: 0 0 20%;
+  color: #fff;
+  background: blue;
+}
 
-@media (max-width: 767px){
-  .hero{
+@media (max-width: 767px) {
+  /* For hero section */
+  .hero {
     padding: 10px;
+  }
+  /* For page layout */
+  .main {
+    margin: 0px 0px;
+  }
+  .main div:nth-child(1) {
+    display: none;
   }
 }
