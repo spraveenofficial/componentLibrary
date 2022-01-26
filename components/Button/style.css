@@ -1,0 +1,30 @@
+.btn{
+    background: #1A202C;
+    padding: .7rem 1rem ;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 14px;
+    min-width: 90px;
+    border-radius: 2px;
+    transition: 0.3s;
+    opacity: 0.9;
+}
+
+.btn-primary{
+    background: #1A202C;
+}
+.btn-secondary{
+    background: #6366F1;
+}
+.btn-success{
+    background: rgb(10, 209, 10);
+}
+.btn-failed{
+    background: rgb(231, 52, 52);
+}
+.btn:hover{
+    opacity: 1;
+}
