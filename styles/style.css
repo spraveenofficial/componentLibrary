@@ -86,12 +86,26 @@ nav .menu a {
 .left div > * {
   color: black !important;
   font-size: auto;
-  font-size: 18px;
+  /* font-size: 18px; */
+  /* text-align: center; */
+}
+
+.left div h1{
+  font-size: 25px;
+  border-bottom: 1px solid black;
+  border-width: 2px;
+}
+
+.left div a{
   transition: 0.3s;
+  font-size: 20px;
+  font-weight: 800;
+  opacity: 0.7;
 }
 
 .left div a:hover {
   text-decoration: underline;
+  opacity: 1;
 }
 .left,
 .right {
