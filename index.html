@@ -8,13 +8,19 @@
     <!-- Linking my stylesheet -->
     <link rel="stylesheet" href="./styles/style.css" />
     <!-- Linking my component based stylesheet -->
-    <link rel="stylesheet" href="./styles/stylesheet.css" />
+    <link rel="stylesheet" href="./styles/components.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+      integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <!-- Added boilerplate in HTML -->
     <nav>
       <div class="logo">
-        <h1>Componently</h1>
+        <h1><a href="">Componently</a></h1>
       </div>
       <div class="menu">
         <a href="/">Home</a>
@@ -22,6 +28,7 @@
         <a href="">Components</a>
       </div>
     </nav>
+    <!-- Main Section -->
     <div class="hero">
       <h1>This is the Frontend Component library you always wanted.</h1>
       <p>
@@ -31,9 +38,20 @@
       </p>
       <div class="hero_btn">
         <button class="btn btn-primary">Get Started</button>
-        <button class="btn btn-secondary">Documentation</button>
+        <button class="btn btn-failed">Documentation</button>
+      </div>
+      <div class="share_code">
+        <pre>
+          <code class="language_html">
+&lt;link rel="stylesheet" href="https://xyz.com"&gt;
+            </code>
+        </pre>
       </div>
     </div>
     <script src="./script/scripts.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
   </body>
 </html>

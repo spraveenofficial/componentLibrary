@@ -58,26 +58,47 @@ nav .menu a {
   font-weight: 600;
   font-size: 18px;
 }
-.hero_btn{
+.hero_btn {
   display: flex;
   gap: 10px;
   margin-top: 20px;
 }
 
+/* Logo */
+.logo h1 a {
+  color: black;
+}
 /* Style for page layout */
 .main {
   display: flex;
-  flex-wrap: wrap;
   padding: 10px;
   margin: 0px 20px;
   height: 100vh;
+  position: relative;
 }
 .main div:nth-child(1) {
   flex: 0 0 20%;
-  color: #fff;
-  background: blue;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
+.left div > * {
+  color: black !important;
+  font-size: auto;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.left div a:hover {
+  text-decoration: underline;
+}
+.left,
+.right {
+  padding: 10px;
+}
+
+/* Responsive : For md screen */
 @media (max-width: 767px) {
   /* For hero section */
   .hero {
@@ -89,5 +110,9 @@ nav .menu a {
   }
   .main div:nth-child(1) {
     display: none;
+  }
+  .left,
+  .right {
+    padding: 0px;
   }
 }
