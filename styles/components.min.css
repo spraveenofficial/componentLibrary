@@ -1,2 +1,16 @@
 @import url("../components/Button/style.css");
 @import url("../components/share-code/style.css");
+
+/* Added Colors which is given in PRD */
+
+:root {
+  --primary-color: #ff3b30;
+  --secondary-color: #fff6ea;
+  --action-color: #3b82f6;
+  --grey-color: #9a9a9a;
+  --black-color: #282828;
+  --white-color: #ffffff;
+  --lynx-white: #f7f7f7;
+  --voilet-color: #5348c7;
+  --lynx-gray: #c5c5c5;
+}

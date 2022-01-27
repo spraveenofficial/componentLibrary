@@ -1,5 +1,5 @@
 .btn{
-    background: #1A202C;
+    background: var(--primary-color);
     padding: .7rem 1rem ;
     outline: none;
     border: none;
@@ -14,10 +14,11 @@
 }
 
 .btn-primary{
-    background: #1A202C;
+    background: var(--primary-color);
 }
 .btn-secondary{
-    background: #6366F1;
+    background: var(--secondary-color);
+    color: var(--black-color);
 }
 .btn-success{
     background: rgb(10, 209, 10);
