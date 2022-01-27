@@ -76,6 +76,7 @@ nav .menu a {
 
 .active {
   background: var(--primary-color);
+  color: var(--white-color) !important;
 }
 /* Style for page layout */
 .main {
@@ -150,6 +151,10 @@ nav .menu a {
 }
 /* Responsive : For md screen */
 @media (max-width: 767px) {
+  /* Navbar */
+  nav{
+    padding: 0px 10px;
+  }
   /* For hero section */
   .hero {
     padding: 10px;

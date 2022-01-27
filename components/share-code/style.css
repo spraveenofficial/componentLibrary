@@ -18,9 +18,15 @@
 }
 
 @media (max-width: 768px) {
+  .share_code{
+    white-space: nowrap !important;
+  }
   .share_code code {
     text-align: center;
     white-space:nowrap;
     text-overflow: ellipsis;
+  }
+  .share{
+    max-width: 90vw;
   }
 }
