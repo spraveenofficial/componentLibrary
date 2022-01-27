@@ -1,12 +1,26 @@
-.share_code{
-  max-width: 90vw;
+.share_code {
+  text-align: center;
+  overflow: hidden;
+  /* white-space: pre; */
+  max-width: fit-content;
 }
-.share_code code{
+
+.share_code code {
   border-radius: 5px !important;
   display: block;
   overflow-x: hidden;
-  padding: 0.5em;
+  padding: 1.5em !important;
   color: #abb2bf;
   text-overflow: ellipsis;
   background: #282c34;
+  white-space: initial;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .share_code code {
+    text-align: center;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+  }
 }

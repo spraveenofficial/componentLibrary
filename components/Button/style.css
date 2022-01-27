@@ -1,31 +1,31 @@
-.btn{
-    background: var(--primary-color);
-    padding: .7rem 1rem ;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    color: #fff;
-    font-weight: bolder;
-    font-size: 14px;
-    min-width: 90px;
-    border-radius: 2px;
-    transition: 0.3s;
-    opacity: 0.9;
+.btn {
+  background: var(--primary-color);
+  padding: 0.7rem 1rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 14px;
+  min-width: 90px;
+  border-radius: 2px;
+  transition: 0.3s;
+  opacity: 0.9;
 }
 
-.btn-primary{
-    background: var(--primary-color);
+.btn-primary {
+  background: var(--primary-color);
 }
-.btn-secondary{
-    background: var(--secondary-color);
-    color: var(--black-color);
+.btn-secondary {
+  background: var(--secondary-color);
+  color: var(--black-color);
 }
-.btn-success{
-    background: rgb(10, 209, 10);
+.btn-success {
+  background: var(--success-color);
 }
-.btn-failed{
-    background: rgb(231, 52, 52);
+.btn-failed {
+  background: var(--failed-color);
 }
-.btn:hover{
-    opacity: 1;
+.btn:hover {
+  opacity: 1;
 }

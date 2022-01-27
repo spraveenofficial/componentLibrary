@@ -10,7 +10,9 @@
   --grey-color: #9a9a9a;
   --black-color: #282828;
   --white-color: #ffffff;
-  --lynx-white: #f7f7f7;
+  --lynx-white-color: #f7f7f7;
   --voilet-color: #5348c7;
-  --lynx-gray: #c5c5c5;
+  --lynx-gray-color: #c5c5c5;
+  --success-color: rgb(10, 209, 10);
+  --failed-color: rgb(231, 52, 52);
 }

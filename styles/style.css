@@ -4,6 +4,9 @@
   padding: 0%;
   text-decoration: none;
 }
+a{
+  color: var(--black-color);
+}
 body {
   box-sizing: border-box;
   font-family: "Nunito sans", sans-serif;
@@ -68,6 +71,12 @@ nav .menu a {
 .logo h1 a {
   color: black;
 }
+
+/* Menu active class */
+
+.active {
+  background: var(--primary-color);
+}
 /* Style for page layout */
 .main {
   display: flex;
@@ -81,37 +90,64 @@ nav .menu a {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  border-radius: 5px;
+}
+.left {
+  /* background: var(--voilet-color); */
 }
 
 .left div > * {
-  color: black !important;
-  font-size: auto;
+  color: var(--black-color);
   /* font-size: 18px; */
   /* text-align: center; */
 }
 
-.left div h1{
+.left div h1 {
   font-size: 25px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--black-color);
   border-width: 2px;
 }
 
-.left div a{
+.left div a {
   transition: 0.3s;
   font-size: 20px;
   font-weight: 800;
-  opacity: 0.7;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .left div a:hover {
-  text-decoration: underline;
-  opacity: 1;
+  background: var(--primary-color);
 }
 .left,
 .right {
   padding: 10px;
+  flex-wrap: wrap;
 }
 
+.right {
+  width: 100%;
+  flex-direction: column;
+}
+
+/* Breadcumbes*/
+.breadcumbs {
+  flex-direction: row !important;
+  display: flex;
+  color: black;
+  align-items: center;
+}
+
+
+/* Global Styles */
+.mt10{
+  margin-top: 10px;
+}
+
+/* Page Main content */
+.content > p{
+  font-size: 17px;
+}
 /* Responsive : For md screen */
 @media (max-width: 767px) {
   /* For hero section */
@@ -122,8 +158,8 @@ nav .menu a {
   .main {
     margin: 0px 0px;
   }
-  .main div:nth-child(1) {
-    display: none;
+  .left {
+    display: none !important;
   }
   .left,
   .right {

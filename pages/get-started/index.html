@@ -7,6 +7,20 @@
     <title>Getting Started - Componently</title>
     <!-- Linking my stylesheet -->
     <link rel="stylesheet" href="../../styles/style.css" />
+    <!-- Linking Components CSS -->
+    <link rel="stylesheet" href="../../styles/components.min.css" />
+    <!-- Linking fontawesome CDN (Content Delivery Network) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Linking HighlightJS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+      integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <!-- Added boilerplate in HTML -->
@@ -24,16 +38,61 @@
       <div class="left">
         <div>
           <h1>Important Links</h1>
-          <a href="">Home</a>
+          <a class="active" href="">Home</a>
           <a href="">Documentation</a>
           <a href="">Typography</a>
           <a href="">Installation</a>
           <a href="">Conculsion</a>
           <!-- <a href="">Installation</a> -->
+          <h1>Components</h1>
+          <a href="">Buttons</a>
+          <a href="">Badges</a>
+          <a href="">Alert</a>
+          <a href="">Avatar</a>
+          <a href="">Cards</a>
         </div>
       </div>
-      <div class="right"><h1>Get Started</h1></div>
+      <div class="right">
+        <div class="content">
+          <div class="breadcumbs">
+            <a class="home" href="/">Home</a>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <a href="/pages/get-started">Get Started</a>
+          </div>
+          <div class="content_header">
+            <h1>Get Started</h1>
+          </div>
+          <div class="content_data">
+            <p>
+              Componently is a collection of web components that can help you
+              create websites faster and better. Componently helps you to
+              quickly build your Dream Project, by focusing much on
+              Functionality, because we take care of your Designs.
+            </p>
+            <br />
+            <h3>To get started:</h3>
+            <p>
+              You can add Componently to your Website/Project via the
+              <b>free unpkg CDN</b>. Just add the following
+              <code>&lt;link&gt;</code> element into your page's
+              <code>&lt;head&gt;</code>, before your project's stylesheets.
+            </p>
+            <div class="share_code mt10">
+              <pre>
+                <code class="language_html">
+                  &lt;link rel="stylesheet" href="https://componently.com/styles/components.min.css"&gt;
+                  </code>
+              </pre>
+            </div>
+            <h1>This</h1>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="./script/scripts.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
   </body>
 </html>
