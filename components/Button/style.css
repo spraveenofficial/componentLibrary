@@ -1,5 +1,5 @@
 .btn {
-  background: var(--primary-color);
+  background: #172B4D;
   padding: 1rem;
   outline: none;
   border: none;
@@ -27,4 +27,14 @@
 }
 .btn:hover {
   opacity: 1;
+}
+
+/* Buttons with icons */
+
+.btn-icon{
+  display: flex;
+  align-items: center;
+}
+.btn-icon i, .btn img, .btn svg{
+  margin-right: 5px;
 }
