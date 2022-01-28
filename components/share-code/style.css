@@ -2,7 +2,7 @@
   text-align: center;
   overflow: hidden;
   /* white-space: pre; */
-  max-width: fit-content;
+  /* max-width: fit-content; */
 }
 
 .share_code code {

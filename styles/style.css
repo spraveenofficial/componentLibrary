@@ -93,9 +93,6 @@ nav .menu a {
   gap: 10px;
   border-radius: 5px;
 }
-.left {
-  /* background: var(--voilet-color); */
-}
 
 .left div > * {
   color: var(--black-color);
