@@ -119,6 +119,7 @@ nav .menu a {
 
 .left div a:hover {
   background: var(--primary-color);
+  color: var(--white-color);
 }
 .left,
 .right {
