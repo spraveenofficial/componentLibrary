@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Button - Componently</title>
+    <title>Alert - Componently</title>
     <!-- Linking my stylesheet -->
     <link rel="stylesheet" href="../../styles/style.css" />
     <!-- Linking Components CSS -->
@@ -46,9 +46,9 @@
           <!-- <a href="">Installation</a> -->
           <h1>Components</h1>
           <a href="../Avatar">Avatar</a>
-          <a href="">Alert</a>
+          <a class="active" href="">Alert</a>
           <a href="">Badge</a>
-          <a class="active" href="">Button</a>
+          <a href="../Button">Button</a>
           <a href="">Image</a>
           <a href="">Input</a>
           <a href="">Modal</a>
@@ -62,73 +62,53 @@
             <i class="fa fa-angle-right" aria-hidden="true"></i>
             <a href="../../pages/get-started">Components</a>
             <i class="fa fa-angle-right" aria-hidden="true"></i>
-            <a href="./index.html">Button</a>
+            <a href="./index.html">Avatar</a>
           </div>
           <div class="content_header">
-            <h1>Button</h1>
+            <h1>Avatar</h1>
           </div>
           <div class="content_data">
             <p>
-              The Button component is used to trigger an action or event, such as submitting a form, opening a dialog, canceling an action, or performing a delete operation.
+                The Avatar component is used to represent a user, and displays the profile picture, initials or fallback icon.
+            </p>
             <h2>Usages</h2>
             <div class="usages">
-              <button class="btn">Button</button>
-              <button class="btn btn-primary">Button</button>
-              <button class="btn btn-secondary">Button</button>
+              <img src="../../assets/img.jpg" class="avatar" alt="">
             </div>
-            <p>To achieve the above buttons, you need to follow the following code: </p>
+            <p>To achieve the above avatar, you need to follow the following code: </p>
             <div class="share_code">
               <pre>
                 <code class="language_html">
-                  < -- For Default Button -->
+                  < -- For Default Avatar -->
                   <br>
-                  &lt;button class="btn"&gtButton&lt/button&gt;
-                  <br>
-                  <br>
-                  < -- For Primary Button -->
-                  <br>
-                  &lt;button class="btn btn-primary"&gtButton&lt/button&gt;
-                  <br>
-                  <br>
-                  < -- For Secondary Button -->
-                  <br>
-                  &lt;button class="btn btn-secondary"&gtButton&lt/button&gt;
+                  &lt;img src="https://example.com/image.png" class="avatar"&gt&lt/img&gt;
                   </code>
               </pre>
             </div>
             <hr>
-            <h1>Button with link</h1>
-            <p>Button with link is used to link from one page to another. </p>
+            <h1>Avatar with sizes</h1>
+            <p>We have pre defined some avatar of a specific size</p>
             <h2>Usages</h2>
             <div class="usages">
-              <button class="btn btn-link"><a href="">Button</a></button>
+                <img src="../../assets/img.jpg" class="avatar-sm" alt="">
+                <img src="../../assets/img.jpg" class="avatar-md" alt="">
+                <img src="../../assets/img.jpg" class="avatar-lg" alt="">
             </div>
-            <p>To achieve the above buttons, you need to follow the following code: </p>
+            <p>To achieve the above avatars, you need to follow the following code: </p>
             <div class="share_code">
               <pre>
                 <code class="language_html">
-                  < -- For Link Button -->
+                  < -- For Small Avatar -->
                   <br>
-                  &lt;button class="btn btn-link"&gt&lta href=""&gtButton&lt/a&gt&lt/button&gt;
+                  &lt;img src="https://example.com/image.png" class="avatar-sm"&gt&lt/img&gt;
                   <br>
-                  </code>
-              </pre>
-            </div>
-            <hr>
-            <h1>Button with icon</h1>
-            <p>You can use Icons in your Buttons respectively. </p>
-            <h2>Usages</h2>
-            <div class="usages">
-              <button class="btn btn-icon"><i class="fa fa-free-code-camp" aria-hidden="true"></i>Button</button>
-            </div>
-            <p>To achieve the above buttons, you need to follow the following code: </p>
-            <div class="share_code">
-              <pre>
-                <code class="language_html">
-                  < -- For Default Icon Button -->
+                  < -- For Medium Avatar -->
                   <br>
-                  &lt;button class="btn btn-icon"&gt&ltsvg&gtButton&ltsvg&gt&lt/button&gt;
+                  &lt;img src="https://example.com/image.png" class="avatar-md"&gt&lt/img&gt;
+                    <br>
+                  < -- For Large Avatar -->
                   <br>
+                  &lt;img src="https://example.com/image.png" class="avatar-lg"&gt&lt/img&gt;
                   </code>
               </pre>
             </div>
