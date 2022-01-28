@@ -213,9 +213,8 @@ nav .menu a {
   cursor: pointer;
   width: 100%;
   background: #babdc0;
-}
-.prev_pagination p, .prev_pagination i, .next_pagination p, .next_pagination i{
   font-size: 20px;
+  display: flex;
 }
 .pagination section div i{
   font-size: 30px;

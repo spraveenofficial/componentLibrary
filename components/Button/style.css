@@ -38,3 +38,9 @@
 .btn-icon i, .btn img, .btn svg{
   margin-right: 5px;
 }
+
+/* Btn with link */
+
+.btn-link a{
+  color: var(--white-color) !important
+}
