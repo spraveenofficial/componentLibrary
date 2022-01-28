@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avatar - Componently</title>
+    <!-- Linking my stylesheet -->
+    <link rel="stylesheet" href="../../styles/style.css" />
+    <!-- Linking Components CSS -->
+    <link rel="stylesheet" href="../../styles/components.min.css" />
+    <!-- Linking fontawesome CDN (Content Delivery Network) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Linking HighlightJS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+      integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Added boilerplate in HTML -->
+    <nav>
+      <div class="logo">
+        <h1><a href="/">Componently</a></h1>
+      </div>
+      <div class="menu">
+        <a href="">Get Started</a>
+        <a href="./pages/components">Components</a>
+      </div>
+    </nav>
+    <!-- Main section -->
+    <div class="main">
+      <div class="left">
+        <div>
+          <h1>Important Links</h1>
+          <a href="../../pages/get-started">Get Started</a>
+          <a href="">Documentation</a>
+          <a href="">Typography</a>
+          <!-- <a href="">Installation</a> -->
+          <a href="">Conculsion</a>
+          <!-- <a href="">Installation</a> -->
+          <h1>Components</h1>
+          <a class="active" href="">Avatar</a>
+          <a href="">Alert</a>
+          <a href="">Badge</a>
+          <a href="../Button">Button</a>
+          <a href="">Image</a>
+          <a href="">Input</a>
+          <a href="">Modal</a>
+          <a href="">Rating</a>
+        </div>
+      </div>
+      <div class="right">
+        <div class="content">
+          <div class="breadcumbs">
+            <a class="home" href="/">Home</a>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <a href="../../pages/get-started">Components</a>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <a href="./index.html">Avatar</a>
+          </div>
+          <div class="content_header">
+            <h1>Avatar</h1>
+          </div>
+          <div class="content_data">
+            <p>
+                The Avatar component is used to represent a user, and displays the profile picture, initials or fallback icon.
+            </p>
+            <h2>Usages</h2>
+            <div class="usages">
+              <img src="../../assets/img.jpg" class="avatar" alt="">
+            </div>
+            <p>To achieve the above avatar, you need to follow the following code: </p>
+            <div class="share_code">
+              <pre>
+                <code class="language_html">
+                  < -- For Default Avatar -->
+                  <br>
+                  &lt;img src="https://example.com/image.png" class="avatar"&gt&lt/img&gt;
+                  </code>
+              </pre>
+            </div>
+            <hr>
+            <h1>Avatar with sizes</h1>
+            <p>We have pre defined some avatar of a specific size</p>
+            <h2>Usages</h2>
+            <div class="usages">
+                <img src="../../assets/img.jpg" class="avatar-sm" alt="">
+                <img src="../../assets/img.jpg" class="avatar-md" alt="">
+                <img src="../../assets/img.jpg" class="avatar-lg" alt="">
+            </div>
+            <p>To achieve the above avatars, you need to follow the following code: </p>
+            <div class="share_code">
+              <pre>
+                <code class="language_html">
+                  < -- For Small Avatar -->
+                  <br>
+                  &lt;img src="https://example.com/image.png" class="avatar-sm"&gt&lt/img&gt;
+                  <br>
+                  < -- For Medium Avatar -->
+                  <br>
+                  &lt;img src="https://example.com/image.png" class="avatar-md"&gt&lt/img&gt;
+                    <br>
+                  < -- For Large Avatar -->
+                  <br>
+                  &lt;img src="https://example.com/image.png" class="avatar-lg"&gt&lt/img&gt;
+                  </code>
+              </pre>
+            </div>
+        </div>
+      </div>
+      <div class="pagination">
+        <section class="prev_pagination flex_start">
+          <!-- <p>Prev</p> -->
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+            <p>Grid</p>
+        </section>
+        <section class="next_pagination flex_end">
+            <p>Grid</p>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </section>
+      </div>
+    </div>
+    <script src="../../script/scripts.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
