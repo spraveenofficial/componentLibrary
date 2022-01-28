@@ -3,6 +3,7 @@
   overflow: hidden;
   /* white-space: pre; */
   /* max-width: fit-content; */
+  width: 100%;
 }
 
 .share_code code {
@@ -15,6 +16,7 @@
   background: #282c34;
   white-space: initial;
   text-align: center;
+  font-size: 12px;
 }
 
 @media (max-width: 768px) {
