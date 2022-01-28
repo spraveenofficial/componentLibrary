@@ -4,10 +4,113 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <title></title>
+    <title>Button - Componently</title>
+    <!-- Linking my stylesheet -->
+    <link rel="stylesheet" href="../../styles/style.css" />
+    <!-- Linking Components CSS -->
+    <link rel="stylesheet" href="../../styles/components.min.css" />
+    <!-- Linking fontawesome CDN (Content Delivery Network) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Linking HighlightJS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+      integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <button class="btn-primary">Button</button>
+    <!-- Added boilerplate in HTML -->
+    <nav>
+      <div class="logo">
+        <h1><a href="/">Componently</a></h1>
+      </div>
+      <div class="menu">
+        <a href="">Get Started</a>
+        <a href="./pages/components">Components</a>
+      </div>
+    </nav>
+    <!-- Main section -->
+    <div class="main">
+      <div class="left">
+        <div>
+          <h1>Important Links</h1>
+          <a href="../../pages/get-started">Get Started</a>
+          <a href="">Documentation</a>
+          <a href="">Typography</a>
+          <!-- <a href="">Installation</a> -->
+          <a href="">Conculsion</a>
+          <!-- <a href="">Installation</a> -->
+          <h1>Components</h1>
+          <a href="">Avatar</a>
+          <a href="">Alert</a>
+          <a href="">Badge</a>
+          <a class="active" href="">Button</a>
+          <a href="">Image</a>
+          <a href="">Input</a>
+          <a href="">Modal</a>
+          <a href="">Rating</a>
+        </div>
+      </div>
+      <div class="right">
+        <div class="content">
+          <div class="breadcumbs">
+            <a class="home" href="/">Home</a>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <a href="../../pages/get-started">Components</a>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <a href="./index.html">Button</a>
+          </div>
+          <div class="content_header">
+            <h1>Button</h1>
+          </div>
+          <div class="content_data">
+            <p>
+              The Button component is used to trigger an action or event, such as submitting a form, opening a dialog, canceling an action, or performing a delete operation.
+            </p>
+            <br />
+            <h3>To get started:</h3>
+            <p>
+              You can add Componently to your Website/Project via the
+              <b>free unpkg CDN</b>. Just add the following
+              <code>&lt;link&gt;</code> element into your page's
+              <code>&lt;head&gt;</code>, before your project's stylesheets.
+            </p>
+            <div class="share_code mt10">
+              <pre>
+                <code class="language_html">
+                  &lt;link rel="stylesheet" href="https://componently.com/styles/components.min.css"&gt;
+                  </code>
+              </pre>
+            </div>
+           
+          <button class="btn btn-primary">Button</button>
+        </div>
+      </div>
+      <div class="pagination">
+        <section class="prev_pagination">
+          <p>Prev</p>
+          <div class="paginationtitle flex_start">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+            <p>Grid</p>
+          </div>
+        </section>
+        <section class="next_pagination">
+          <p>Next</p>
+          <div class="paginationtitle flex_end">
+            <p>Grid</p>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="../../script/scripts.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
   </body>
 </html>

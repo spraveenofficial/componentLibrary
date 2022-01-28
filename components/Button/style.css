@@ -1,12 +1,11 @@
 .btn {
   background: var(--primary-color);
-  padding: 0.7rem 1rem;
+  padding: 1rem;
   outline: none;
   border: none;
   cursor: pointer;
   color: #fff;
   font-weight: bolder;
-  font-size: 14px;
   min-width: 90px;
   border-radius: 2px;
   transition: 0.3s;
