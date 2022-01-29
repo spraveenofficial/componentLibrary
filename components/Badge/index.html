@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Badge - Componently</title>
+    <!-- Linking my stylesheet -->
+    <link rel="stylesheet" href="../../styles/style.css" />
+    <!-- Linking Components CSS -->
+    <link rel="stylesheet" href="../../styles/components.min.css" />
+    <!-- Linking fontawesome CDN (Content Delivery Network) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Linking HighlightJS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+      integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Added boilerplate in HTML -->
+    <nav>
+      <div class="logo">
+        <h1><a href="/">Componently</a></h1>
+      </div>
+      <div class="menu">
+        <a href="">Get Started</a>
+        <a href="./pages/components">Components</a>
+      </div>
+    </nav>
+    <!-- Main section -->
+    <div class="main">
+      <div class="left">
+        <div>
+          <h1>Important Links</h1>
+          <a href="../../pages/get-started">Get Started</a>
+          <a href="">Documentation</a>
+          <a href="">Typography</a>
+          <!-- <a href="">Installation</a> -->
+          <a href="">Conculsion</a>
+          <!-- <a href="">Installation</a> -->
+          <h1>Components</h1>
+          <a href="../Avatar">Avatar</a>
+          <a href="">Alert</a>
+          <a class="active" href="">Badge</a>
+          <a href="../Button">Button</a>
+          <a href="">Image</a>
+          <a href="">Input</a>
+          <a href="">Modal</a>
+          <a href="">Rating</a>
+        </div>
+      </div>
+      <div class="right">
+        <div class="content">
+          <div class="breadcumbs">
+            <a class="home" href="/">Home</a>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <a href="../../pages/get-started">Components</a>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <a href="./index.html">Badge</a>
+          </div>
+          <div class="content_header">
+            <h1>Badge</h1>
+          </div>
+          <div class="content_data">
+            <p>
+              Badges are used to highlight an item's status for quick
+              recognition.
+            </p>
+            <h2>Usages</h2>
+            <div class="usages flex-column">
+              <div class="alert">
+                This is Primary alert message from Componently.
+              </div>
+              <div class="alert alert-success">
+                This is Success alert message from Componently.
+              </div>
+              <div class="alert alert-warning">
+                This is Warning alert message from Componently.
+              </div>
+            </div>
+            <p>
+              To achieve the above alert, you need to follow the following code:
+            </p>
+            <div class="share_code">
+              <pre>
+                <code class="language_html">
+                  < -- For Primary Alert -->
+                  <br>
+                  &lt;div class="alert"&gtAlert&lt/div&gt;
+                  <br>
+                  <br>
+                  < -- For Success Alert -->
+                  <br>
+                  &lt;div class="alert alert-success"&gtSuccess Alert&lt/div&gt;
+                    <br>
+                  <br>
+                  < -- For Warning Alert -->
+                  <br>
+                  &lt;div class="alert alert-success"&gtWarning Alert&lt/div&gt;
+                  </code>
+              </pre>
+            </div>
+            <hr />
+            <h1>Outline Alert</h1>
+            <p>
+              Outline alerts are created by using alert class, followed by
+              outline-variant.
+            </p>
+            <h2>Usages</h2>
+            <div class="usages flex-column">
+              <div class="alert alert-outline">
+                This is Primary alert message from Componently.
+              </div>
+              <div class="alert alert-outline-success">
+                This is Success alert message from Componently.
+              </div>
+              <div class="alert alert-outline-warning">
+                This is Warning alert message from Componently.
+              </div>
+            </div>
+            <p>
+              To achieve the above alert, you need to follow the following code:
+            </p>
+            <div class="share_code">
+              <pre>
+                <code class="language_html">
+                  < -- For Primary Alert -->
+                  <br>
+                  &lt;div class="alert"&gtAlert&lt/div&gt;
+                  <br>
+                  <br>
+                  < -- For Success Alert -->
+                  <br>
+                  &lt;div class="alert alert-outline-success"&gtSuccess Alert&lt/div&gt;
+                    <br>
+                  <br>
+                  < -- For Warning Alert -->
+                  <br>
+                  &lt;div class="alert alert-outline-warning"&gtWarning Alert&lt/div&gt;
+                  </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+        <div class="pagination">
+          <section class="prev_pagination flex_start">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+            <a href="../Avatar">Avatar</a>
+          </section>
+          <section class="next_pagination flex_end">
+            <a href="../Badge">Badge</a>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script src="../../script/scripts.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
