@@ -1,7 +1,7 @@
 @import url("../components/Button/style.css");
 @import url("../components/share-code/style.css");
 @import url('../components/Avatar/style.css');
-
+@import url('../components/Alert/style.css');
 /* Added Colors which is given in PRD */
 
 :root {
@@ -16,4 +16,5 @@
   --lynx-gray-color: #c5c5c5;
   --success-color: rgb(10, 209, 10);
   --failed-color: rgb(231, 52, 52);
+  --warning-color: #ffeb3b;
 }
