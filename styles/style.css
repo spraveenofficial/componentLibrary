@@ -177,7 +177,9 @@ nav .menu a {
 .mt10 {
   margin-top: 10px;
 }
-
+.flex-column{
+  flex-direction: column;
+}
 /* Page Main content */
 .content > p {
   font-size: 17px;
@@ -213,11 +215,10 @@ nav .menu a {
   color: var(--black-color);
   cursor: pointer;
   width: 100%;
-  background: #babdc0;
   font-size: 20px;
   display: flex;
 }
-.pagination section div i{
+.pagination section i{
   font-size: 30px;
   margin: 0px 10px;
 }
