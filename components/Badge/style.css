@@ -1,0 +1,47 @@
+.badge {
+  position: relative;
+  width: min-content;
+}
+
+.badge > div {
+  bottom: 5px;
+  right: 1px;
+  background: var(--primary-color);
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}
+
+.badge .online{
+    background: var(--success-color);
+}
+
+.badge .offline{
+    background: var(--black-color);
+}
+
+.badge .dnd{
+    background: var(--primary-color);
+}
+
+
+/* Icons Badge */
+
+.badge .number{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top : -5px;
+  right: -3px !important;
+  position: absolute;
+  color: var(--white-color);
+  font-weight: 900;
+  height: 18px;
+  width: 18px;
+  border: none;
+  font-size: 12px;
+  background: var(--primary-color);
+  padding: 2px;
+  border-radius: 50%;
+}
