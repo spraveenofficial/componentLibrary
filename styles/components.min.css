@@ -2,6 +2,7 @@
 @import url("../components/share-code/style.css");
 @import url('../components/Avatar/style.css');
 @import url('../components/Alert/style.css');
+@import url('../components/Badge/style.css');
 /* Added Colors which is given in PRD */
 
 :root {

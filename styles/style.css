@@ -12,7 +12,6 @@ body {
   font-family: "Nunito sans", sans-serif;
 }
 
-
 nav {
   position: -webkit-sticky;
   position: sticky;
@@ -86,11 +85,15 @@ nav .menu a {
   position: relative;
 }
 .main div:nth-child(1) {
-  flex: 0 0 20%;
+  /* flex: 0 10%; */
   display: flex;
   flex-direction: column;
   gap: 10px;
   border-radius: 5px;
+}
+
+.left {
+  flex: 0 0 20%;
 }
 
 .left div > * {
@@ -156,38 +159,36 @@ nav .menu a {
   margin-bottom: 10px;
 }
 
-.components_table a i{
+.components_table a i {
   margin-right: 5px;
   font-size: 16px;
   align-items: center;
   text-align: center;
 }
 
-.components_table a:hover::after{
-  content: ' >';
+.components_table a:hover::after {
+  content: " >";
 }
 .components_table a:hover {
   box-shadow: 0 8px 24px rgb(149 157 165 / 20%);
   padding-right: 1em;
 }
 
-
-
 /* Global Styles */
 .mt10 {
   margin-top: 10px;
 }
-.flex-column{
+.flex-column {
   flex-direction: column;
 }
 /* Page Main content */
 .content > p {
   font-size: 17px;
 }
-.content{
+.content {
   min-height: 95vh;
 }
-.usages{
+.usages {
   background: var(--grey-color);
   margin-bottom: 10px;
   /* height: 100px; */
@@ -200,12 +201,13 @@ nav .menu a {
 }
 
 /* Pagination */
-.pagination{
+.pagination {
   display: flex;
   justify-content: space-between;
 }
 
-.prev_pagination, .next_pagination{
+.prev_pagination,
+.next_pagination {
   flex: 0 0 10%;
   align-items: center;
   padding: 10px;
@@ -218,21 +220,21 @@ nav .menu a {
   font-size: 20px;
   display: flex;
 }
-.pagination section i{
+.pagination section i {
   font-size: 30px;
   margin: 0px 10px;
 }
-.paginationtitle{
+.paginationtitle {
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
 }
-.flex_start{
+.flex_start {
   justify-content: flex-start;
 }
 
-.flex_end{
+.flex_end {
   justify-content: flex-end;
 }
 
@@ -258,8 +260,8 @@ nav .menu a {
     padding: 0px;
   }
   /* Components table */
-  .components_table{
-   display: flex;
-   justify-content: space-evenly;
+  .components_table {
+    display: flex;
+    justify-content: space-evenly;
   }
 }
