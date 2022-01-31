@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Button - Componently</title>
+    <title>Image - Componently</title>
     <!-- Linking my stylesheet -->
     <link rel="stylesheet" href="../../styles/style.css" />
     <!-- Linking Components CSS -->
@@ -47,9 +47,9 @@
           <h1>Components</h1>
           <a href="../Avatar">Avatar</a>
           <a href="../Alert">Alert</a>
-          <a href="../Badge">Badge</a>
-          <a class="active" href="">Button</a>
-          <a href="../Image">Image</a>
+          <a href="">Badge</a>
+          <a href="../Button">Button</a>
+          <a class="active" href="">Image</a>
           <a href="">Input</a>
           <a href="">Modal</a>
           <a href="">Rating</a>
@@ -62,91 +62,109 @@
             <i class="fa fa-angle-right" aria-hidden="true"></i>
             <a href="../../pages/get-started">Components</a>
             <i class="fa fa-angle-right" aria-hidden="true"></i>
-            <a href="./index.html">Button</a>
+            <a href="./index.html">Image</a>
           </div>
           <div class="content_header">
-            <h1>Button</h1>
+            <h1>Image</h1>
           </div>
           <div class="content_data">
             <p>
-              The Button component is used to trigger an action or event, such as submitting a form, opening a dialog, canceling an action, or performing a delete operation.
+              Badges are used to highlight an item's status for quick
+              recognition.
+            </p>
             <h2>Usages</h2>
             <div class="usages">
-              <button class="btn">Button</button>
-              <button class="btn btn-primary">Button</button>
-              <button class="btn btn-secondary">Button</button>
+              <div class="badge">
+                <img src="../../assets/img.jpg" class="avatar" alt="" />
+                <div class="online"></div>
+              </div>
+              <div class="badge">
+                <img src="../../assets/img.jpg" class="avatar" alt="" />
+                <div class="offline"></div>
+              </div>
+              <div class="badge">
+                <img src="../../assets/img.jpg" class="avatar" alt="" />
+                <div class="dnd"></div>
+              </div>
             </div>
-            <p>To achieve the above buttons, you need to follow the following code: </p>
+            <p>
+              To achieve the above badge, you need to follow the following code:
+            </p>
             <div class="share_code">
               <pre>
                 <code class="language_html">
-                  < -- For Default Button -->
+                  < -- For Online Badge -->
                   <br>
-                  &lt;button class="btn"&gtButton&lt/button&gt;
+                  &lt;div class="badge"&gt <br> 
+                    &lt;img class="avatar" src="url"&lt/img&gt;
+                    <br>
+                  &lt;div class="online"&gt&lt/div&gt; <br> 
+                  &lt/div&gt;
                   <br>
                   <br>
-                  < -- For Primary Button -->
+                  < -- For Offline Badge -->
                   <br>
-                  &lt;button class="btn btn-primary"&gtButton&lt/button&gt;
+                  &lt;div class="badge"&gt <br> 
+                    &lt;img class="avatar" src="url"&lt/img&gt;
+                    <br>
+                  &lt;div class="offline"&gt&lt/div&gt; <br> 
+                  &lt/div&gt;
+                    <br>
                   <br>
+                  < -- For DND Badge -->
                   <br>
-                  < -- For Secondary Button -->
-                  <br>
-                  &lt;button class="btn btn-secondary"&gtButton&lt/button&gt;
+                  &lt;div class="badge"&gt <br> 
+                    &lt;img class="avatar" src="url"&lt/img&gt;
+                    <br>
+                  &lt;div class="dnd"&gt&lt/div&gt; <br> 
+                  &lt/div&gt;
                   </code>
               </pre>
             </div>
-            <hr>
-            <h1>Button with link</h1>
-            <p>Button with link is used to link from one page to another. </p>
+            <hr />
+            <h1>Icon Badge</h1>
+            <p>
+              Icon Badge is used to show the quantity on the top of the
+              svg/image.
+            </p>
             <h2>Usages</h2>
-            <div class="usages">
-              <button class="btn btn-link"><a href="">Button</a></button>
+            <div class="usages flex-column">
+              <div class="badge">
+                <img class="avatar" src="../../assets/img.jpg" alt="" />
+                <p class="number">10</p>
+              </div>
             </div>
-            <p>To achieve the above buttons, you need to follow the following code: </p>
+            <p>
+              To achieve the above Badge, you need to follow the following code:
+            </p>
             <div class="share_code">
               <pre>
                 <code class="language_html">
-                  < -- For Link Button -->
+                  < -- For Online Badge -->
                   <br>
-                  &lt;button class="btn btn-link"&gt&lta href=""&gtButton&lt/a&gt&lt/button&gt;
-                  <br>
-                  </code>
-              </pre>
-            </div>
-            <hr>
-            <h1>Button with icon</h1>
-            <p>You can use Icons in your Buttons respectively. </p>
-            <h2>Usages</h2>
-            <div class="usages">
-              <button class="btn btn-icon"><i class="fa fa-free-code-camp" aria-hidden="true"></i>Button</button>
-            </div>
-            <p>To achieve the above buttons, you need to follow the following code: </p>
-            <div class="share_code">
-              <pre>
-                <code class="language_html">
-                  < -- For Default Icon Button -->
-                  <br>
-                  &lt;button class="btn btn-icon"&gt&ltsvg&gtButton&ltsvg&gt&lt/button&gt;
+                  &lt;div class="badge"&gt <br> 
+                    &lt;img class="avatar" src="url"&lt/img&gt;
+                    <br>
+                  &lt;div class="number"&gt10&lt/div&gt; <br> 
+                  &lt/div&gt;
                   <br>
                   </code>
               </pre>
             </div>
+          </div>
+        </div>
+        <div class="pagination">
+          <section class="prev_pagination flex_start">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+            <a href="../Alert">Alert</a>
+          </section>
+          <section class="next_pagination flex_end">
+            <a href="../Button">Button</a>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </section>
         </div>
       </div>
-      <div class="pagination">
-        <section class="prev_pagination flex_start">
-          <!-- <p>Prev</p> -->
-            <i class="fa fa-angle-left" aria-hidden="true"></i>
-            <a href="../Badge">Badge</a>
-        </section>
-        <section class="next_pagination flex_end">
-            <p>Grid</p>
-            <i class="fa fa-angle-right" aria-hidden="true"></i>
-        </section>
-      </div>
     </div>
-  </div>
     <script src="../../script/scripts.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
     <script>
