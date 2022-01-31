@@ -1,0 +1,20 @@
+.sm-img{
+    width: 150px;
+    height: 150px;
+}
+
+.md-img{
+    width: 200px;
+    height: 200px;
+}
+
+.lg-img{
+    width: 300px;
+    height: 300px;
+}
+
+/* Rounded Images */
+
+.round-img{
+    border-radius: 50% !important;
+}
