@@ -259,6 +259,10 @@ nav .menu a {
   .right {
     padding: 0px;
   }
+  .image_usage{
+    display: flex;
+    flex-direction: column;
+  }
   /* Components table */
   .components_table {
     display: flex;
