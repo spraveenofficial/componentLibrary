@@ -66,7 +66,7 @@
             <a href="./index.html">Cards</a>
           </div>
           <div class="content_header">
-            <h1>Image</h1>
+            <h1>Cards</h1>
           </div>
           <div class="content_data">
             <p>Cards are the container that display content on a topic.</p>
@@ -141,7 +141,10 @@
             <div class="usages image_usage">
               <div class="card-dismiss">
                 <div class="card_header">
-                  <i class="fa fa-close"></i>
+                  <i
+                    onclick="document.querySelector('.card-dismiss').style.display = 'none'; "
+                    class="fa fa-close"
+                  ></i>
                 </div>
                 <div class="card-data">
                   <h1>This is dialog</h1>
@@ -167,6 +170,69 @@
                   &lt;p&gt;This is paragraph.&lt;/p&gt;
                   <br>
                   &lt;/div&gt; <br>
+                  &lt;/div&gt;
+                  </code>
+              </pre>
+            </div>
+            <hr />
+            <h1>Ecommerce Card</h1>
+            <p>
+              Ecommerce component will help you to list your products on your
+              web page.
+            </p>
+            <h2>Usages</h2>
+            <div class="usages image_usage">
+              <div class="card ecom">
+                <div class="product-image">
+                  <img
+                    src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pink-select-2021?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1629842709000"
+                    alt="card-pic"
+                  />
+                </div>
+                <div class="card-badge">NEW</div>
+                <button class="ico">
+                  <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </button>
+                <div class="card-title">Apple</div>
+                <div class="card-text">Iphone 13 Pro Max</div>
+                <div class="card-price">
+                  <span class="price-now"> Rs. 89,1000 </span>
+                  <span class="price-before"> Rs. 90,000 </span>
+                  <span class="discount"> (22% OFF) </span>
+                </div>
+                <button class="btn btn-primary">ADD TO CART</button>
+              </div>
+            </div>
+            <p>
+              To achieve the above Images design, you need to follow the
+              following code:
+            </p>
+            <div class="share_code">
+              <pre>
+                <code class="language_html">
+                  < -- For Ecommerce Card -->
+                  <br>
+                  &lt;div class="card ecom"&gt;
+                  <br>
+                  &lt;div class="product-image"&gt;
+                  <br>
+                  &lt;img src="url" alt="image" /&gt;
+                  <br>
+                  &lt;/div&gt; <br>
+                  &lt;div class="cart-badge"&gt;
+                  <br>
+                  &lt;button class="ico"&gt;
+                  <br>
+                  &lt;/button&gt; <br>
+                  &lt;div class="card-title"&gt;Apple&lt;/div&gt; <br>
+                  &lt;div class="card-text"&gt;Iphone 13 pro max&lt;/div&gt; <br>
+                  &lt;div class="card-price"&gt;<br>
+                  &lt;span class="price-now"&gt; Rs. 89,100&lt;/span&gt;<br>
+                  &lt;span class="price-before"&gt;Rs. 90,000&lt;/span&gt;<br>
+                  &lt;span class="discount"&gt;(22% Off&lt;/span&gt;<br>
+                  &lt;/div&gt; <br>
+                  &lt;button class="btn btn-primary"&gt;Add to Cart
+                  &lt;/button&gt; <br>
                   &lt;/div&gt;
                   </code>
               </pre>

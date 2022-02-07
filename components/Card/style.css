@@ -4,15 +4,10 @@
     padding: 10px;
     min-width: 300px;
     min-height: 200px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .card-img{
-    /* border: 1px solid var(--black-color); */
     overflow: hidden;
     background: var(--white-color);
     gap: 0px !important;
@@ -53,4 +48,99 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
+}
+
+/* ecommerce card */
+
+.ecom{
+    width: 230px;
+    box-shadow: none;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    position: relative;
+}
+
+.card-badge{
+    position: absolute;
+    top : 20px;
+    left: -1px;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    font-size: .8rem;
+    padding: .2rem .5rem;
+    transition: all .2s ease-in-out;
+}
+
+
+.ecom:hover >.card-badge{
+    background-color: var(--failed-color);
+}
+
+.product-image{
+    position: relative;
+    text-align: center;
+    height: 280px;
+    overflow: hidden;
+}
+
+.product-image img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.ico{
+    cursor: pointer;
+    position: absolute;
+    top : 15px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.ico i{
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+}
+
+
+.ecom .card-title{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.ecom .card-text{
+    padding: .4rem 1rem;
+    font-size: 18px;
+    font-weight: 700;
+    color :#444444;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.ecom .card-price{
+    padding: 0 1rem;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.price-now{
+    font-weight: 700;
+    padding-right: 5px;
+}
+
+.price-before{
+    font-weight: 700;
+    text-decoration: line-through;
+    padding-right: 5px;
+    opacity: .7;
+}
+
+.discount{
+    font-size: 10px;
+    color : var(--danger-color)
 }
