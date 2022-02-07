@@ -1,3 +1,4 @@
+/* Importing Styles for Components */
 @import url("../components/Button/style.css");
 @import url("../components/share-code/style.css");
 @import url('../components/Avatar/style.css');
@@ -5,6 +6,9 @@
 @import url('../components/Badge/style.css');
 @import url('../components/Image/style.css');
 @import url('../components/Card/style.css');
+
+@import url('../components/Input/style.css');
+
 /* Added Colors which is given in PRD */
 
 :root {
