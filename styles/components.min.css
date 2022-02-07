@@ -4,6 +4,8 @@
 @import url('../components/Alert/style.css');
 @import url('../components/Badge/style.css');
 @import url('../components/Image/style.css');
+@import url('../components/Card/style.css');
+@import url('../components/Input/style.css');
 /* Added Colors which is given in PRD */
 
 :root {
