@@ -22,4 +22,8 @@
   --success-color: rgb(10, 209, 10);
   --failed-color: rgb(231, 52, 52);
   --warning-color: #ffeb3b;
+  --text-red: red;
+  --text-green: green;
+  --text-blue: blue;
+  --text-cyan: cyan;
 }
