@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cards - Componently</title>
+    <!-- Linking my stylesheet -->
+    <link rel="stylesheet" href="../../styles/style.css" />
+    <!-- Linking Components CSS -->
+    <link rel="stylesheet" href="../../styles/components.min.css" />
+    <!-- Linking fontawesome CDN (Content Delivery Network) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Linking HighlightJS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+      integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Added boilerplate in HTML -->
+    <nav>
+      <div class="logo">
+        <h1><a href="/">Componently</a></h1>
+      </div>
+      <div class="menu">
+        <a href="">Get Started</a>
+        <a href="./pages/components">Components</a>
+      </div>
+    </nav>
+    <!-- Main section -->
+    <div class="main">
+      <div class="left">
+        <div>
+          <h1>Important Links</h1>
+          <a href="../../pages/get-started">Get Started</a>
+          <a href="">Documentation</a>
+          <a href="">Typography</a>
+          <!-- <a href="">Installation</a> -->
+          <a href="">Conculsion</a>
+          <!-- <a href="">Installation</a> -->
+          <h1>Components</h1>
+          <a href="../Avatar">Avatar</a>
+          <a href="../Alert">Alert</a>
+          <a href="../Badge">Badge</a>
+          <a href="../Button">Button</a>
+          <a class="active" href="">Cards</a>
+          <a href="../Image">Image</a>
+          <a href="">Input</a>
+          <a href="">Modal</a>
+          <a href="">Rating</a>
+        </div>
+      </div>
+      <div class="right">
+        <div class="content">
+          <div class="breadcumbs">
+            <a class="home" href="/">Home</a>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <a href="../../pages/get-started">Components</a>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <a href="./index.html">Cards</a>
+          </div>
+          <div class="content_header">
+            <h1>Cards</h1>
+          </div>
+          <div class="content_data">
+            <p>Cards are the container that display content on a topic.</p>
+            <h2>Usages</h2>
+            <div class="usages image_usage">
+              <div class="card">
+                <h1>Hello World!</h1>
+                <p>This is paragraph.</p>
+              </div>
+            </div>
+            <p>
+              This is the basic card component which is having a fixed dimension
+              value of 200x200px.
+            </p>
+            <div class="share_code">
+              <pre>
+                <code class="language_html">
+                  < -- For Default card 200x200px -->
+                  <br>
+                  &lt;div class="card"&gt;<br>
+                    &lt;h1&gt; Hello World!&lt/h1&gt; <br>
+                  &lt/div&gt;
+                  <br>
+                  </code>
+              </pre>
+            </div>
+            <hr />
+            <h1>Images Cards</h1>
+            <p>
+              The class = "round-img" is having default value of border-radius
+              of 50% explicitly.
+            </p>
+            <h2>Usages</h2>
+            <div class="usages image_usage">
+              <div class="card-img">
+                <img src="../../assets/image.jpg" alt="" />
+                <div class="card_data">
+                  <h1>Hello World!</h1>
+                  <p>This is paragraph.</p>
+                </div>
+              </div>
+            </div>
+            <p>
+              To achieve the above Images design, you need to follow the
+              following code:
+            </p>
+            <div class="share_code">
+              <pre>
+                <code class="language_html">
+                  < -- For Text with Image -->
+                  <br>
+                  &lt;div class="card-img"&gt;
+                  <br>
+                  &lt;img src="url" alt="image" /&gt;
+                  <br>
+                  &lt;div class="card_data"&gt;
+                  <br>
+                  &lt;h1&gt;Hello World &lt;/h1&gt; <br>
+                  &lt;p&gt;This is paragraph.&lt;/p&gt;
+                  <br>
+                  &lt;/div&gt; <br>
+                  &lt;/div&gt;
+                  </code>
+              </pre>
+            </div>
+            <hr />
+            <h1>Card with Dismiss</h1>
+            <p>
+              Card with Dismiss will help you to close the dialog/popup message.
+            </p>
+            <h2>Usages</h2>
+            <div class="usages image_usage">
+              <div class="card-dismiss">
+                <div class="card_header">
+                  <i
+                    onclick="document.querySelector('.card-dismiss').style.display = 'none'; "
+                    class="fa fa-close"
+                  ></i>
+                </div>
+                <div class="card-data">
+                  <h1>This is dialog</h1>
+                </div>
+              </div>
+            </div>
+            <p>
+              To achieve the above Images design, you need to follow the
+              following code:
+            </p>
+            <div class="share_code">
+              <pre>
+                <code class="language_html">
+                  < -- For Text with Image -->
+                  <br>
+                  &lt;div class="card-img"&gt;
+                  <br>
+                  &lt;img src="url" alt="image" /&gt;
+                  <br>
+                  &lt;div class="card_data"&gt;
+                  <br>
+                  &lt;h1&gt;Hello World &lt;/h1&gt; <br>
+                  &lt;p&gt;This is paragraph.&lt;/p&gt;
+                  <br>
+                  &lt;/div&gt; <br>
+                  &lt;/div&gt;
+                  </code>
+              </pre>
+            </div>
+            <hr />
+            <h1>Ecommerce Card</h1>
+            <p>
+              Ecommerce component will help you to list your products on your
+              web page.
+            </p>
+            <h2>Usages</h2>
+            <div class="usages image_usage">
+              <div class="card ecom">
+                <div class="product-image">
+                  <img
+                    src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pink-select-2021?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1629842709000"
+                    alt="card-pic"
+                  />
+                </div>
+                <div class="card-badge">NEW</div>
+                <button class="ico">
+                  <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </button>
+                <div class="card-title">Apple</div>
+                <div class="card-text">Iphone 13 Pro Max</div>
+                <div class="card-price">
+                  <span class="price-now"> Rs. 89,1000 </span>
+                  <span class="price-before"> Rs. 90,000 </span>
+                  <span class="discount"> (22% OFF) </span>
+                </div>
+                <button class="btn btn-primary">ADD TO CART</button>
+              </div>
+            </div>
+            <p>
+              To achieve the above Images design, you need to follow the
+              following code:
+            </p>
+            <div class="share_code">
+              <pre>
+                <code class="language_html">
+                  < -- For Ecommerce Card -->
+                  <br>
+                  &lt;div class="card ecom"&gt;
+                  <br>
+                  &lt;div class="product-image"&gt;
+                  <br>
+                  &lt;img src="url" alt="image" /&gt;
+                  <br>
+                  &lt;/div&gt; <br>
+                  &lt;div class="cart-badge"&gt;
+                  <br>
+                  &lt;button class="ico"&gt;
+                  <br>
+                  &lt;/button&gt; <br>
+                  &lt;div class="card-title"&gt;Apple&lt;/div&gt; <br>
+                  &lt;div class="card-text"&gt;Iphone 13 pro max&lt;/div&gt; <br>
+                  &lt;div class="card-price"&gt;<br>
+                  &lt;span class="price-now"&gt; Rs. 89,100&lt;/span&gt;<br>
+                  &lt;span class="price-before"&gt;Rs. 90,000&lt;/span&gt;<br>
+                  &lt;span class="discount"&gt;(22% Off&lt;/span&gt;<br>
+                  &lt;/div&gt; <br>
+                  &lt;button class="btn btn-primary"&gt;Add to Cart
+                  &lt;/button&gt; <br>
+                  &lt;/div&gt;
+                  </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+        <div class="pagination">
+          <section class="prev_pagination flex_start">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+            <a href="../Button">Cards</a>
+          </section>
+          <section class="next_pagination flex_end">
+            <a href="../Image">Image</a>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script src="../../script/scripts.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
