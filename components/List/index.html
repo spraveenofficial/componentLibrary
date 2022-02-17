@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Utlities - Componently</title>
+    <!-- Linking my stylesheet -->
+    <link rel="stylesheet" href="../../styles/style.css" />
+    <!-- Linking Components CSS -->
+    <link rel="stylesheet" href="../../styles/components.min.css" />
+    <!-- Linking fontawesome CDN (Content Delivery Network) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Linking HighlightJS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+      integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Added boilerplate in HTML -->
+    <nav>
+      <div class="logo">
+        <h1><a href="/">Componently</a></h1>
+      </div>
+      <div class="menu">
+        <a href="">Get Started</a>
+        <a href="./pages/components">Components</a>
+      </div>
+    </nav>
+    <!-- Main section -->
+    <div class="main">
+      <div class="left">
+        <div>
+          <h1>Important Link</h1>
+          <a href="../../pages/get-started">Get Started</a>
+          <h1>Components</h1>
+          <a href="../Avatar">Avatar</a>
+          <a href="../Alert">Alert</a>
+          <a href="../Badge">Badge</a>
+          <a href="../Button">Button</a>
+          <a href="../Card">Cards</a>
+          <a href="../Image">Image</a>
+          <a href="../Input">Input</a>
+          <a href="../Texts">Text Utilities</a>
+          <a class="active" href="">List</a>
+          <a href="">Modal</a>
+          <a href="">Rating</a>
+        </div>
+      </div>
+      <div class="right">
+        <div class="content">
+          <div class="breadcumbs">
+            <a class="home" href="/">Home</a>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <a href="../../pages/get-started">Components</a>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <a href="./index.html">List</a>
+          </div>
+          <div class="content_header">
+            <h1>List</h1>
+          </div>
+          <div class="content_data">
+            <p>
+              List component is used to list the product/items.
+            </p>
+            <h2>Usages</h2>
+            <div class="usages flex flex-column">
+              <h1>Hello World</h1>
+              <h2>Hello World</h2>
+              <h3>Hello World</h3>
+              <h4>Hello World</h4>
+              <h5>Hello World</h5>
+              <h6>Hello World</h6>
+            </div>
+            <p>This is the default Texts from our component library.</p>
+            <div class="share_code">
+              <pre>
+                <code class="language_html">
+                  < -- For Default Input Component -->
+                  <br>
+                 &lt;h1&gt;Hello World&lt;/h1&gt; <br>
+                 &lt;h2&gt;Hello World&lt;/h2&gt; <br>
+                 &lt;h3&gt;Hello World&lt;/h3&gt; <br>
+                 &lt;h4&gt;Hello World&lt;/h4&gt; <br>
+                 &lt;h5&gt;Hello World&lt;/h5&gt; <br>
+                 &lt;h6&gt;Hello World&lt;/h6&gt; <br>
+                  </code>
+              </pre>
+            </div>
+            <hr />
+            <h1>Text with Different Color</h1>
+            <p>We have pre defined some Sizes for the texts.</p>
+            <h2>Usages</h2>
+            <div class="usages flex-column">
+              <h1 class="text-cyan">Hello World</h1>
+              <h2 class="text-red">Hello World</h2>
+              <h3 class="text-green">Hello World</h3>
+              <h4 class="text-yellow">Hello World</h4>
+              <h5 class="text-gray">Hello World</h5>
+              <h6 class="text-blue">Hello World</h6>
+            </div>
+            <p>
+              To achieve the text designs , you need to follow the following
+              code:
+            </p>
+            <div class="share_code">
+              <pre>
+                <code class="language_html">
+                  < -- For Different Color Texts -->
+                  <br>
+                 &lt;h1 class="text-cyan"&gt;Hello World&lt;/h1&gt; <br>
+                 &lt;h2 class="text-red"&gt;Hello World&lt;/h2&gt; <br>
+                 &lt;h3 class="text-green"&gt;Hello World&lt;/h3&gt; <br>
+                 &lt;h4 class="text-yellow"&gt;Hello World&lt;/h4&gt; <br>
+                 &lt;h5 class="text-gray"&gt;Hello World&lt;/h5&gt; <br>
+                 &lt;h6 class="text-blue"&gt;Hello World&lt;/h6&gt; <br>
+                  </code>
+              </pre>
+            </div>
+            <hr />
+            <h1>Centered text</h1>
+            <p>We have predefined the aligned the text property as center</p>
+            <h2>Usages</h2>
+            <div class="usages flex-column">
+              <div class="card text-centered">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                  eius quas eos, fugit ducimus ratione non voluptate quidem
+                  earum quis nulla id facilis quod cumque quibusdam beatae
+                  itaque aspernatur facere.
+                </p>
+              </div>
+            </div>
+            <p>
+              To achieve the text designs , you need to follow the following
+              code:
+            </p>
+            <div class="share_code">
+              <pre>
+                <code class="language_html">
+                  < -- For Centered Text -->
+                  <br>
+                 &lt;div class="text-centered"&gt;<br>
+                  &lt;p&gt; Content Here! &lt;/p&gt; <br>
+                 &lt;/div&gt; <br>
+                  </code>
+              </pre>
+            </div>
+            <hr />
+            <h1>Text with Styling</h1>
+            <p>We have predefined some style/tranformation of the texts.</p>
+            <h2>Usages</h2>
+            <div class="usages flex-column">
+              <p class="text-underline">This is Underlined Text.</p>
+              <p class="text-cross">This is line-through Text.</p>
+              <p class="text-highlight">This is Highlighted Text.</p>
+              <p class="text-italic">This is Italic Text.</p>
+            </div>
+            <p>
+              To achieve the text designs , you need to follow the following
+              code:
+            </p>
+            <div class="share_code">
+              <pre>
+                <code class="language_html">
+                  < -- For Styled Texts -->
+                  <br>
+                  &lt;p class="text-underline"&gt;This is Underlined Text.&lt;/p&gt; <br>
+                 &lt;p class="text-cross"&gt;This is line-through Text.&lt;/p&gt; <br>
+                 &lt;p class="text-highlight"&gt;This is Highlighted Text.&lt;/p&gt; <br>
+                 &lt;p class="text-italic"&gt;This is italic Text.&lt;/p&gt; <br>
+                  </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+        <div class="pagination">
+          <section class="prev_pagination flex_start">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+            <a href="../Input">Input</a>
+          </section>
+          <section class="next_pagination flex_end">
+            <a href="../Input">Input</a>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script src="../../script/scripts.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
