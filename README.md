@@ -20,4 +20,17 @@ You can add Componently to your Website via the free unpkg CDN. Just add the fol
 <button class="btn btn-primary">Web Components!</button>
 ```
 
+## Components
+
+- Avatar
+- Alert
+- Badge
+- Button
+- Card
+- Image
+- Input
+- Text Utilities
+- List
+
+
 Author: @spraveenofficial
