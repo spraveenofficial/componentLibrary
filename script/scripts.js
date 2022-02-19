@@ -2,6 +2,8 @@ const compMenu = document.querySelector(".mobile-menu");
 const compNav = document.querySelector(".aside-nav");
 const menuItem = document.querySelector(".menu_content");
 const imageToRotate = document.querySelector(".fa-chevron-right")
+
+
 let isMobileMenuOpen = false;
 compMenu.addEventListener("click", () => {
   if (!isMobileMenuOpen) {

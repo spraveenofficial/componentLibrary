@@ -35,6 +35,13 @@ nav .menu a {
   margin: 0px 10px;
   color: var(--text-light--text--color);
 }
+.menu i{
+  cursor: pointer;
+  background: var(--action-color);
+  padding: 10px;
+  border-radius: 50%;
+  color: var(--white-color);
+}
 
 /* Hero Section of Homepage */
 
