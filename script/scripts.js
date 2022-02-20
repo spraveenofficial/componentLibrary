@@ -1,16 +1,17 @@
 const compMenu = document.querySelector(".mobile-menu");
 const compNav = document.querySelector(".aside-nav");
 const menuItem = document.querySelector(".menu_content");
-const imageToRotate = document.querySelector(".fa-chevron-right")
-
-
+const imageToRotate = document.querySelector(".fa-chevron-right");
+const toggleSnackBar = document.querySelector("#leading-snackbar");
+const snackbar = document.querySelector(".snackbar");
+const body = document.body;
 let isMobileMenuOpen = false;
 compMenu.addEventListener("click", () => {
   if (!isMobileMenuOpen) {
     menuItem.style.display = "block";
     compMenu.style.height = "16rem";
     compMenu.style.overflowY = "scroll";
-    imageToRotate.style.transform = "rotate(180deg)"
+    imageToRotate.style.transform = "rotate(180deg)";
     isMobileMenuOpen = !isMobileMenuOpen;
   } else {
     menuItem.style.display = "none";
@@ -19,4 +20,15 @@ compMenu.addEventListener("click", () => {
     imageToRotate.style.transform = null;
     isMobileMenuOpen = !isMobileMenuOpen;
   }
+});
+
+toggleSnackBar.addEventListener("click", function () {
+  snackbar.style.display = "flex";
+  setTimeout(() => {
+    snackbar.style.display = "none";
+  }, 4000);
+});
+
+document.querySelector(".close-btn-snackbar").addEventListener("click", () => {
+  snackbar.style.display = "none";
 });
