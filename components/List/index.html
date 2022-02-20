@@ -87,44 +87,74 @@
             <h1>List</h1>
           </div>
           <div class="content_data">
-            <p>
-              List component is used to list the product/items.
-            </p>
+            <p>List component is used to list the product/items.</p>
             <h2>Usages</h2>
             <div class="usages flex flex-column">
-              <h1>Hello World</h1>
-              <h2>Hello World</h2>
-              <h3>Hello World</h3>
-              <h4>Hello World</h4>
-              <h5>Hello World</h5>
-              <h6>Hello World</h6>
+              <div class="ordered-list">
+                <ol>
+                  <li>Car</li>
+                  <li>Bike</li>
+                  <li>Cycle</li>
+                </ol>
+              </div>
             </div>
             <p>This is the default Texts from our component library.</p>
             <div class="share_code">
               <pre>
                 <code class="language_html">
-                  < -- For Default Input Component -->
+                  < -- For Ordered List -->
                   <br>
-                 &lt;h1&gt;Hello World&lt;/h1&gt; <br>
-                 &lt;h2&gt;Hello World&lt;/h2&gt; <br>
-                 &lt;h3&gt;Hello World&lt;/h3&gt; <br>
-                 &lt;h4&gt;Hello World&lt;/h4&gt; <br>
-                 &lt;h5&gt;Hello World&lt;/h5&gt; <br>
-                 &lt;h6&gt;Hello World&lt;/h6&gt; <br>
+                 &lt;div class="ordered-list"&gt; <br>
+                 &lt;ol&gt; <br>
+                 &lt;li&gt;Car&lt;/li&gt; <br>
+                 &lt;li&gt;Bike&lt;/li&gt; <br>
+                 &lt;li&gt;Cycle&lt;/li&gt; <br>
+                 &lt;/ol&gt; <br>
+                 &lt;/div&gt;
                   </code>
               </pre>
             </div>
             <hr />
-            <h1>Text with Different Color</h1>
-            <p>We have pre defined some Sizes for the texts.</p>
+            <h1>Bullet List</h1>
+            <p>In this style, items will start with bullet.</p>
             <h2>Usages</h2>
             <div class="usages flex-column">
-              <h1 class="text-cyan">Hello World</h1>
-              <h2 class="text-red">Hello World</h2>
-              <h3 class="text-green">Hello World</h3>
-              <h4 class="text-yellow">Hello World</h4>
-              <h5 class="text-gray">Hello World</h5>
-              <h6 class="text-blue">Hello World</h6>
+              <ul class="bullet-list">
+                <li>Bullet Item 1</li>
+                <li>Bullet Item 2</li>
+                <li>Bullet Item 3</li>
+                <li>Bullet Item 4</li>
+              </ul>
+            </div>
+            <p>
+              To achieve the list designs , you need to follow the following
+              code:
+            </p>
+            <div class="share_code">
+              <pre>
+                <code class="language_html">
+                  < -- For Bullet List -->
+                  <br>
+                  &lt;ul class="bullet-list"&gt; <br>
+                  &lt;li&gt;Bullet Item 1&lt;/li&gt; <br>
+                  &lt;li&gt;Bullet Item 2&lt;/li&gt; <br>
+                  &lt;li&gt;Bullet Item 3&lt;/li&gt; <br>
+                  &lt;li&gt;Bullet Item 4&lt;/li&gt; <br>
+                  &lt;/ul&gt;
+                  </code>
+              </pre>
+            </div>
+            <hr />
+            <h1>Squared List</h1>
+            <p>In this predifined class list will start with sqaure dot.</p>
+            <h2>Usages</h2>
+            <div class="usages flex-column">
+              <ul class="square-list">
+                <li>Square Item 1</li>
+                <li>Square Item 2</li>
+                <li>Square Item 3</li>
+                <li>Square Item 4</li>
+              </ul>
             </div>
             <p>
               To achieve the text designs , you need to follow the following
@@ -133,69 +163,44 @@
             <div class="share_code">
               <pre>
                 <code class="language_html">
-                  < -- For Different Color Texts -->
+                  < -- For Squared List -->
                   <br>
-                 &lt;h1 class="text-cyan"&gt;Hello World&lt;/h1&gt; <br>
-                 &lt;h2 class="text-red"&gt;Hello World&lt;/h2&gt; <br>
-                 &lt;h3 class="text-green"&gt;Hello World&lt;/h3&gt; <br>
-                 &lt;h4 class="text-yellow"&gt;Hello World&lt;/h4&gt; <br>
-                 &lt;h5 class="text-gray"&gt;Hello World&lt;/h5&gt; <br>
-                 &lt;h6 class="text-blue"&gt;Hello World&lt;/h6&gt; <br>
+                  &lt;ul class="square-list"&gt; <br>
+                  &lt;li&gt;Square Item 1&lt;/li&gt; <br>
+                  &lt;li&gt;Square Item 2&lt;/li&gt; <br>
+                  &lt;li&gt;Square Item 3&lt;/li&gt; <br>
+                  &lt;li&gt;Square Item 4&lt;/li&gt; <br>
+                  &lt;/ul&gt;
                   </code>
               </pre>
             </div>
             <hr />
-            <h1>Centered text</h1>
-            <p>We have predefined the aligned the text property as center</p>
+            <h1>Stacked List</h1>
+            <p>You can style your list more attractive by adding own images.</p>
             <h2>Usages</h2>
             <div class="usages flex-column">
-              <div class="card text-centered">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-                  eius quas eos, fugit ducimus ratione non voluptate quidem
-                  earum quis nulla id facilis quod cumque quibusdam beatae
-                  itaque aspernatur facere.
-                </p>
-              </div>
+              <ul class="img-list">
+                <li>
+                  <img class="avatar" src="../../assets/img.jpg" alt="img" />
+                  Hey, welcome to Componently.
+                </li>
+              </ul>
             </div>
             <p>
-              To achieve the text designs , you need to follow the following
+              To achieve the stacked list , you need to follow the following
               code:
             </p>
             <div class="share_code">
               <pre>
                 <code class="language_html">
-                  < -- For Centered Text -->
+                  < -- For Stacked List -->
                   <br>
-                 &lt;div class="text-centered"&gt;<br>
-                  &lt;p&gt; Content Here! &lt;/p&gt; <br>
-                 &lt;/div&gt; <br>
-                  </code>
-              </pre>
-            </div>
-            <hr />
-            <h1>Text with Styling</h1>
-            <p>We have predefined some style/tranformation of the texts.</p>
-            <h2>Usages</h2>
-            <div class="usages flex-column">
-              <p class="text-underline">This is Underlined Text.</p>
-              <p class="text-cross">This is line-through Text.</p>
-              <p class="text-highlight">This is Highlighted Text.</p>
-              <p class="text-italic">This is Italic Text.</p>
-            </div>
-            <p>
-              To achieve the text designs , you need to follow the following
-              code:
-            </p>
-            <div class="share_code">
-              <pre>
-                <code class="language_html">
-                  < -- For Styled Texts -->
-                  <br>
-                  &lt;p class="text-underline"&gt;This is Underlined Text.&lt;/p&gt; <br>
-                 &lt;p class="text-cross"&gt;This is line-through Text.&lt;/p&gt; <br>
-                 &lt;p class="text-highlight"&gt;This is Highlighted Text.&lt;/p&gt; <br>
-                 &lt;p class="text-italic"&gt;This is italic Text.&lt;/p&gt; <br>
+                  &lt;ul class="img-list"&gt; <br>
+                  &lt;li&gt;<br>
+                  &lt;img class="avatar" src="url here" alt="img" /&gt; <br>
+                  Hey, welcome to componently. <br>
+                  &lt;/li&gt; <br>
+                  &lt;/ul&gt;
                   </code>
               </pre>
             </div>
@@ -204,7 +209,7 @@
         <div class="pagination">
           <section class="prev_pagination flex_start">
             <i class="fa fa-angle-left" aria-hidden="true"></i>
-            <a href="../Input">Input</a>
+            <a href="../Texts">Texts</a>
           </section>
           <section class="next_pagination flex_end">
             <a href="../Input">Input</a>
