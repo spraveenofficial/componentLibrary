@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation - Componently</title>
+    <!-- Linking my stylesheet -->
+    <link rel="stylesheet" href="../../styles/style.css" />
+    <!-- Linking Components CSS -->
+    <link rel="stylesheet" href="../../styles/components.min.css" />
+    <!-- Linking fontawesome CDN (Content Delivery Network) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Linking HighlightJS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+      integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Added boilerplate in HTML -->
+    <nav>
+      <div class="logo">
+        <h1><a href="/">Componently</a></h1>
+      </div>
+      <div class="menu">
+        <a href="../../pages/get-started">Get Started</a>
+        <i
+          onclick="window.location='https://github.com/spraveenofficial/componentLibrary'"
+          class="fa fa-github"
+          aria-hidden="true"
+        ></i>
+      </div>
+    </nav>
+    <!-- Main section -->
+    <div class="main">
+      <div class="left">
+        <div>
+          <h1>Important Links</h1>
+          <a href="../get-started">Get Started</a>
+          <h1>Components</h1>
+          <a href="../Avatar">Avatar</a>
+          <a href="../Alert">Alert</a>
+          <a href="../Badge">Badge</a>
+          <a href="../Button">Button</a>
+          <a href="../Card">Cards</a>
+          <a href="../Image">Image</a>
+          <a href="../Input">Input</a>
+          <a href="../Texts">Texts Utilites</a>
+          <a href="../List">List</a>
+          <a class="active" href="../Navigation">Navigation</a>
+        </div>
+      </div>
+      <div class="right">
+        <div class="mobile-menu">
+          <div class="menu-header">
+            <h3>Components</h3>
+            <i class="fa fa-chevron-right"></i>
+          </div>
+          <div class="menu_content">
+            <div class="menu-items-mobile">
+              <a href="../Avatar">Avatar</a>
+              <a href="../Alert">Alert</a>
+              <a href="../Badge">Badge</a>
+              <a href="../Button">Button</a>
+              <a href="../Card">Cards</a>
+              <a href="../Image">Image</a>
+              <a href="../Input">Input</a>
+              <a href="../Texts">Texts Utilites</a>
+              <a href="../List">List</a>
+              <a href="../Navigation">Navigation</a>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="breadcumbs">
+            <a class="home" href="/">Home</a>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <a href="../../pages/get-started">Components</a>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <a href="./index.html">List</a>
+          </div>
+          <div class="content_header">
+            <h1>Navigation</h1>
+          </div>
+          <div class="content_data">
+            <p>
+              Navigation helps users of a website to easily access sections of a
+              webpage or access completely different websites.
+            </p>
+            <h2>Usages</h2>
+            <div class="usages flex">
+              <div class="header_component">
+                <div class="header_menu">
+                  <i class="fa fa-bars" aria-hidden="true"></i>
+                  <h1>neoG 22 Batch</h1>
+                </div>
+                <div class="header__btns">
+                  <i class="fa fa-download" aria-hidden="true"></i>
+                  <i class="fa fa-print" aria-hidden="true"></i>
+                  <i class="fa fa-bookmark" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <p>This is the default navigation bar from our component library.</p>
+            <div class="share_code">
+              <pre>
+                <code class="language_html">
+                  < -- For Navigation Bar -->
+                  <br>
+                &lt;div class="header_component"&gt; <br>
+                &lt;div class="header_menu"&gt; <br>
+                &lt;i class="fa fa bars" aria-hidden="true"&gt; &lt;/i&gt; <br>
+                &lt;h1&gt;neoG 22 Batch&lt;/h1&gt; <br>
+                &lt;/div&gt; <br>
+                &lt;div class="header_menu"&gt; <br>
+                &lt;i class="fa fa bars" aria-hidden="true"&gt; &lt;/i&gt; <br>
+                &lt;i class="fa fa bars" aria-hidden="true"&gt; &lt;/i&gt; <br>
+                &lt;i class="fa fa bars" aria-hidden="true"&gt; &lt;/i&gt;<br>
+                &lt;/div&gt; <br>
+                &lt;/div&gt;
+                  </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+        <div class="pagination">
+          <section class="prev_pagination flex_start">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+            <a href="../List">List</a>
+          </section>
+          <section class="next_pagination flex_end">
+            <a href="../Input">Input</a>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script src="../../script/scripts.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>

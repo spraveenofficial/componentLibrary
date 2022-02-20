@@ -9,6 +9,7 @@
 @import url("../components/Input/style.css");
 @import url("../components/Texts/style.css");
 @import url("../components/List/style.css");
+@import url("../components/Navigation/style.css");
 /* Added Colors which is given in PRD */
 :root  {
   --primary-color: #ff3b30;
