@@ -9,10 +9,9 @@
   width: 100%;
   height: 3.125rem;
   align-items: center;
-  display: flex;
   padding: 0px 0.625rem;
   justify-content: space-between;
-  color: #ffff;
+  color: var(--white-color);
   display: flex;
   flex-direction: row !important;
 }
