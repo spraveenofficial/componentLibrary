@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rating - Componently</title>
+    <!-- Linking my stylesheet -->
+    <link rel="stylesheet" href="../../styles/style.css" />
+    <!-- Linking Components CSS -->
+    <link rel="stylesheet" href="../../styles/components.min.css" />
+    <!-- Linking fontawesome CDN (Content Delivery Network) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Linking HighlightJS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+      integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Added boilerplate in HTML -->
+    <nav>
+      <div class="logo">
+        <h1><a href="/">Componently</a></h1>
+      </div>
+      <div class="menu">
+        <a href="../../pages/get-started">Get Started</a>
+        <i
+          onclick="window.location='https://github.com/spraveenofficial/componentLibrary'"
+          class="fa fa-github"
+          aria-hidden="true"
+        ></i>
+      </div>
+    </nav>
+    <!-- Main section -->
+    <div class="main">
+      <div class="left">
+        <div>
+          <h1>Important Links</h1>
+          <a href="../get-started">Get Started</a>
+          <h1>Components</h1>
+          <a href="../Avatar">Avatar</a>
+          <a href="../Alert">Alert</a>
+          <a href="../Badge">Badge</a>
+          <a href="../Button">Button</a>
+          <a href="../Card">Cards</a>
+          <a href="../Image">Image</a>
+          <a href="../Input">Input</a>
+          <a href="../Texts">Texts Utilites</a>
+          <a href="../List">List</a>
+          <a href="../Navigation">Navigation</a>
+          <a class="active" href="../Rating">Rating</a>
+        </div>
+      </div>
+      <div class="right">
+        <div class="mobile-menu">
+          <div class="menu-header">
+            <h3>Components</h3>
+            <i class="fa fa-chevron-right"></i>
+          </div>
+          <div class="menu_content">
+            <div class="menu-items-mobile">
+              <a href="../Avatar">Avatar</a>
+              <a href="../Alert">Alert</a>
+              <a href="../Badge">Badge</a>
+              <a href="../Button">Button</a>
+              <a href="../Card">Cards</a>
+              <a href="../Image">Image</a>
+              <a href="../Input">Input</a>
+              <a href="../Texts">Texts Utilites</a>
+              <a href="../List">List</a>
+              <a href="../Navigation">Navigation</a>
+              <a href="../Rating">Rating</a>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="breadcumbs">
+            <a class="home" href="/">Home</a>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <a href="../../pages/get-started">Components</a>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <a href="./index.html">List</a>
+          </div>
+          <div class="content_header">
+            <h1>Rating</h1>
+          </div>
+          <div class="content_data">
+            <p>
+              Rating is used to determine or receive the feedback from the
+              users.
+            </p>
+            <h2>Usages</h2>
+            <div class="usages">
+              <div class="flex align-center select-rating">
+                <input
+                  type="radio"
+                  name="rating"
+                  id="star1"
+                  class="hide"
+                  value="1"
+                />
+                <label for="star1"><i class="fa fa-star"></i></label>
+                <input
+                  type="radio"
+                  name="rating"
+                  id="star2"
+                  class="hide"
+                  value="2"
+                />
+                <label for="star2"><i class="fa fa-star"></i></label>
+                <input
+                  type="radio"
+                  name="rating"
+                  id="star3"
+                  class="hide"
+                  value="3"
+                />
+                <label for="star3"><i class="fa fa-star"></i></label>
+                <input
+                  type="radio"
+                  name="rating"
+                  id="star4"
+                  class="hide"
+                  value="4"
+                />
+                <label for="star4"><i class="fa fa-star"></i></label>
+                <input
+                  type="radio"
+                  name="rating"
+                  id="star5"
+                  class="hide"
+                  value="5"
+                />
+                <label for="star5"><i class="fa fa-star"></i></label>
+              </div>
+            </div>
+            <p>This is the default rating components with size of 32px/2rem.</p>
+            <div class="share_code">
+              <pre>
+                <code class="language_html">
+                  < -- For Rating -->
+                  <br>
+              &lt;div class="flex align-center select-rating" &gt; <br>
+              &lt;input type="radio" name="rating" id="star1" class="hide" value="1" /&gt; <br>
+              &lt;label for="star1"&gt;&lt;i class="fa fa star"&gt;&lt;/i&gt; &lt;/label&gt; <br>
+              &lt;input type="radio" name="rating" id="star2" class="hide" value="2" /&gt; <br>
+              &lt;label for="star2"&gt;&lt;i class="fa fa star"&gt;&lt;/i&gt; &lt;/label&gt; <br>
+              &lt;input type="radio" name="rating" id="star3" class="hide" value="3" /&gt; <br>
+              &lt;label for="star3"&gt;&lt;i class="fa fa star"&gt;&lt;/i&gt; &lt;/label&gt; <br>
+              &lt;input type="radio" name="rating" id="start4" class="hide" value="4" /&gt; <br>
+              &lt;label for="start4"&gt;&lt;i class="fa fa star"&gt;&lt;/i&gt; &lt;/label&gt; <br>
+              &lt;input type="radio" name="rating" id="star5" class="hide" value="5" /&gt; <br>
+              &lt;label for="star5"&gt;&lt;i class="fa fa star"&gt;&lt;/i&gt; &lt;/label&gt; <br>
+              &lt;/div&gt;
+                  </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+        <div class="pagination">
+          <section class="prev_pagination flex_start">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+            <a href="../Navigation">Navigation</a>
+          </section>
+          <section class="next_pagination flex_end">
+            <a href="../Input">Input</a>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script src="../../script/scripts.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>

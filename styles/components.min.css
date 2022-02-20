@@ -10,6 +10,7 @@
 @import url("../components/Texts/style.css");
 @import url("../components/List/style.css");
 @import url("../components/Navigation/style.css");
+@import url("../components/Rating/style.css");
 /* Added Colors which is given in PRD */
 :root  {
   --primary-color: #ff3b30;
@@ -28,4 +29,12 @@
   --text-green: green;
   --text-blue: blue;
   --text-cyan: cyan;
+}
+
+.flex-row{
+  flex-direction: row !important;
+}
+
+.align-center{
+  align-items: center;
 }
