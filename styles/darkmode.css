@@ -1,0 +1,36 @@
+:root{
+    --bg-color-dark: #1a202c;
+}
+
+.dark-mode {
+  background-color: var(--bg-color-dark);
+  color: var(--white-color);
+}
+.dark-mode > *{
+  color: var(--white-color) !important;
+}
+.dark-mode .left a, .dark-mode .left h1{
+    color: var(--white-color);
+}
+.dark-mode .breadcumbs > *{
+    color: var(--white-color);
+}
+
+.dark-mode h1, .dark-mode h2{
+    color: var(--white-color);
+}
+
+.dark-mode nav{
+    background-color: var(--bg-color-dark);
+}
+
+.dark-mode nav .logo h1 a{
+    color: var(--white-color);
+    /* background: #1c222c; */
+}
+.dark-mode .menu-items-mobile a{
+    color: var(--white-color) ;
+}
+.dark-mode nav  h1{
+    color: var(--white-color);
+}
