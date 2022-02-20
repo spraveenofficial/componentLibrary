@@ -12,6 +12,7 @@
 @import url("../components/Navigation/style.css");
 @import url("../components/Rating/style.css");
 @import url("../components/Snackbar/style.css");
+@import url("../components/Grid/style.css");
 /* Added Colors which is given in PRD */
 :root  {
   --primary-color: #ff3b30;

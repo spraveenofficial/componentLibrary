@@ -1,0 +1,19 @@
+.grid {
+  display: grid !important;
+  word-break: break-all;
+  width: 100%;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-3{
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid-item{
+    border: 1px solid black;
+    padding: 10px 0px ;
+    min-width: 100% !important;
+    border-radius: 0.3rem;
+    text-align: center;
+}
