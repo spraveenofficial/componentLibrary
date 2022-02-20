@@ -25,6 +25,8 @@ const changeTheme = () => {
   const mode = localStorage.getItem("mode");
   if (mode == "dark") {
     databody.classList.add("dark-mode");
+    toggleDarkMode.classList.remove("fa-moon-o");
+    toggleDarkMode.classList.add("fa-sun-o");
   } else {
     databody.classList.remove("dark-mode");
   }
