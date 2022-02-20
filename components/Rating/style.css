@@ -1,0 +1,19 @@
+.select-rating {
+  flex-direction: row-reverse !important;
+  font-size: 2rem;
+}
+
+.hide {
+  display: none;
+}
+
+.select-rating label {
+  cursor: pointer;
+  color: var(--white-color);
+}
+.select-rating label:hover {
+  color: var(--warning-color);
+}
+.select-rating :checked ~ label {
+  color: var(--warning-color);
+}

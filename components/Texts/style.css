@@ -14,7 +14,11 @@
   color: var(--grey-color);
 }
 .text-cyan {
-  color: (--text-cyan);
+  color: var(--text-cyan);
+}
+
+.text-white{
+  color: var(--white-color);
 }
 
 .text-centered {
