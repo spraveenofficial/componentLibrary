@@ -29,6 +29,12 @@
         <h1><a href="/">Componently</a></h1>
       </div>
       <div class="menu">
+        <i
+        onclick="changeTheme()"
+        class="fa fa-moon-o"
+        id="toggle-darkmode"
+        aria-hidden="true"
+      ></i>
         <a href="../../pages/get-started">Get Started</a>
         <i
           onclick="window.location='https://github.com/spraveenofficial/componentLibrary'"
@@ -53,6 +59,10 @@
           <a href="../Input">Input</a>
           <a href="../Texts">Texts Utilites</a>
           <a class="active" href="../List">List</a>
+          <a href="../Navigation">Navigation</a>
+          <a href="../Rating">Rating</a>
+          <a href="../Snackbar">Snackbar</a>
+          <a href="../Grid">Grid</a>
         </div>
       </div>
       <div class="right">
@@ -72,6 +82,10 @@
               <a href="../Input">Input</a>
               <a href="../Texts">Texts Utilites</a>
               <a href="../List">List</a>
+              <a href="../Navigation">Navigation</a>
+              <a href="../Rating">Rating</a>
+              <a href="../Snackbar">Snackbar</a>
+              <a href="../Grid">Grid</a>
             </div>
           </div>
         </div>
@@ -212,13 +226,14 @@
             <a href="../Texts">Texts</a>
           </section>
           <section class="next_pagination flex_end">
-            <a href="../Input">Input</a>
+            <a href="../Navigation">Navigation</a>
             <i class="fa fa-angle-right" aria-hidden="true"></i>
           </section>
         </div>
       </div>
     </div>
     <script src="../../script/scripts.js"></script>
+    <script src="../../script/darkmode.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
     <script>
       hljs.highlightAll();

@@ -4,6 +4,7 @@ const menuItem = document.querySelector(".menu_content");
 const imageToRotate = document.querySelector(".fa-chevron-right");
 const toggleSnackBar = document.querySelector("#leading-snackbar");
 const snackbar = document.querySelector(".snackbar");
+
 const body = document.body;
 let isMobileMenuOpen = false;
 compMenu.addEventListener("click", () => {
@@ -32,3 +33,4 @@ toggleSnackBar.addEventListener("click", function () {
 document.querySelector(".close-btn-snackbar").addEventListener("click", () => {
   snackbar.style.display = "none";
 });
+
