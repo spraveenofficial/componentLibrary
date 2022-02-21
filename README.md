@@ -13,7 +13,7 @@ You can access this component library using this link, [Componently](https://com
 You can add Componently to your Website via the free unpkg CDN. Just add the following <link> element into your page's <head>, before your project's stylesheets.
 
 ```html
-<!-- Import a free cdn inside your head -->
+<!-- Import a free cdn inside your head of your HTML file -->
 <link
   rel="stylesheet"
   href="https://componently.netlify.app/styles/components.min.css"
