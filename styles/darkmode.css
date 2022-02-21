@@ -1,0 +1,52 @@
+:root {
+  --bg-color-dark: #1a202c;
+}
+
+.dark-mode {
+  background-color: var(--bg-color-dark);
+}
+.dark-mode > * {
+  color: var(--white-color) !important;
+}
+.dark-mode > * {
+  color: var(--white-color);
+}
+.dark-mode .left a,
+.dark-mode .left h1 {
+  color: var(--white-color);
+}
+.dark-mode .breadcumbs > * {
+  color: var(--white-color);
+}
+
+.dark-mode .content_data > div {
+  color: black;
+}
+.dark-mode .content_data > * p {
+  color: black;
+}
+.dark-mode nav {
+  background-color: var(--bg-color-dark);
+}
+
+.dark-mode nav .logo h1 a {
+  color: var(--white-color);
+  /* background: #1c222c; */
+}
+.dark-mode .menu-items-mobile a {
+  color: var(--white-color);
+}
+.dark-mode nav h1 {
+  color: var(--white-color);
+}
+.dark-mode .usage div > * {
+  color: var(--black-color) ;
+}
+
+.dark-mode .pagination section > *{
+  color: var(--white-color);
+}
+
+.dark-mode .snackbar p, .dark-mode .snackbar i{
+  color: var(--white-color);
+}

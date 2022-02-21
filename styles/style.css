@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap");
 @import url("../styles/mobilenav.css");
+@import url("../styles/darkmode.css");
+
 * {
   margin: 0%;
   padding: 0%;
@@ -35,7 +37,7 @@ nav .menu a {
   margin: 0px 10px;
   color: var(--text-light--text--color);
 }
-.menu i{
+.menu i {
   cursor: pointer;
   background: var(--action-color);
   padding: 10px;
@@ -245,6 +247,7 @@ nav .menu a {
 .flex_end {
   justify-content: flex-end;
 }
+/* Dark Mode */
 
 /* Responsive : For md screen */
 @media (max-width: 767px) {
@@ -267,7 +270,7 @@ nav .menu a {
   .right {
     padding: 0px;
   }
-  .image_usage{
+  .image_usage {
     display: flex;
     flex-direction: column;
   }
@@ -276,7 +279,7 @@ nav .menu a {
     display: flex;
     justify-content: space-evenly;
   }
-  .mobile-menu{
+  .mobile-menu {
     display: block;
   }
 }
