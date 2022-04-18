@@ -39,6 +39,7 @@ You can add Componently to your Website via the free unpkg CDN. Just add the fol
   <li><a href="https://componently.netlify.app/components/Rating/">Rating</a></li>
   <li><a href="https://componently.netlify.app/components/Snackbar/">Snackbar</a></li>
   <li><a href="https://componently.netlify.app/components/texts/">Texts</a></li>
+  <li><a href="https://componently.netlify.app/components/Modal/">Modal</a></li>
 </ul>
 
 ---
