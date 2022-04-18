@@ -4,8 +4,8 @@ const menuItem = document.querySelector(".menu_content");
 const imageToRotate = document.querySelector(".fa-chevron-right");
 const toggleSnackBar = document.querySelector("#leading-snackbar");
 const snackbar = document.querySelector(".snackbar");
+const modal = document.querySelector(".fancy-modal");
 
-const body = document.body;
 let isMobileMenuOpen = false;
 compMenu.addEventListener("click", () => {
   if (!isMobileMenuOpen) {
@@ -30,7 +30,10 @@ toggleSnackBar.addEventListener("click", function () {
   }, 4000);
 });
 
-document.querySelector(".close-btn-snackbar").addEventListener("click", () => {
-  snackbar.style.display = "none";
-});
+function toggleModal() {
+  modal.style.display = "flex";
+}
 
+function hideModal() {
+  modal.style.display = "none";
+}

@@ -1,5 +1,5 @@
 .btn {
-  background: #172B4D;
+  background: #172b4d;
   padding: 1rem;
   outline: none;
   border: none;
@@ -31,16 +31,37 @@
 
 /* Buttons with icons */
 
-.btn-icon{
+.btn-icon {
   display: flex;
   align-items: center;
 }
-.btn-icon i, .btn img, .btn svg{
+.btn-icon i,
+.btn img,
+.btn svg {
   margin-right: 5px;
 }
 
 /* Btn with link */
 
-.btn-link a{
-  color: var(--white-color) !important
+.btn-link a {
+  color: var(--white-color) !important;
+  text-decoration: underline;
+}
+
+/* Floating Action Button */
+.action-button {
+  position: sticky;
+  top: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 0;
+  outline: 0;
+  background: var(--primary-color);
+  font-size: 24px;
+  color: var(--white-color);
+  z-index: 2;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transition: all 0.3s;
+  cursor: pointer;
 }

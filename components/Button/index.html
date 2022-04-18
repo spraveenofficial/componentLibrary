@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Button - Componently</title>
+    <!-- Add Favicon -->
+    <link rel="shortcut icon" href="../../assets/favicon.ico" />
     <!-- Linking my stylesheet -->
     <link rel="stylesheet" href="../../styles/style.css" />
     <!-- Linking Components CSS -->
@@ -30,11 +32,11 @@
       </div>
       <div class="menu">
         <i
-        onclick="changeTheme()"
-        class="fa fa-moon-o"
-        id="toggle-darkmode"
-        aria-hidden="true"
-      ></i>
+          onclick="changeTheme()"
+          class="fa fa-moon-o"
+          id="toggle-darkmode"
+          aria-hidden="true"
+        ></i>
         <a href="../../pages/get-started">Get Started</a>
         <i
           onclick="window.location='https://github.com/spraveenofficial/componentLibrary'"
@@ -48,9 +50,9 @@
       <div class="left">
         <div>
           <h1>Important Links</h1>
-          <a href="../get-started">Get Started</a>
+          <a href="../../pages/get-started">Get Started</a>
           <h1>Components</h1>
-          <a  href="../Avatar">Avatar</a>
+          <a href="../Avatar">Avatar</a>
           <a href="../Alert">Alert</a>
           <a href="../Badge">Badge</a>
           <a class="active" href="../Button">Button</a>
@@ -63,6 +65,7 @@
           <a href="../Rating">Rating</a>
           <a href="../Snackbar">Snackbar</a>
           <a href="../Grid">Grid</a>
+          <a href="../Modal">Modal</a>
         </div>
       </div>
       <div class="right">
@@ -86,6 +89,7 @@
               <a href="../Rating">Rating</a>
               <a href="../Snackbar">Snackbar</a>
               <a href="../Grid">Grid</a>
+              <a href="../Modal">Modal</a>
             </div>
           </div>
         </div>
@@ -176,6 +180,29 @@
                   < -- For Default Icon Button -->
                   <br>
                   &lt;button class="btn btn-icon"&gt&ltsvg&gtButton&ltsvg&gt&lt/button&gt;
+                  <br>
+                  </code>
+              </pre>
+            </div>
+            <hr />
+            <h1>Floating Action Button</h1>
+            <p>You can use Icons in your Buttons respectively.</p>
+            <h2>Usages</h2>
+            <div class="usages">
+              <button class="action-button">
+                <span class="fa fa-plus"></span>
+              </button>
+            </div>
+            <p>
+              To achieve the above buttons, you need to follow the following
+              code:
+            </p>
+            <div class="share_code">
+              <pre>
+                <code class="language_html">
+                  < -- For Floating Action Button -->
+                  <br>
+                  &lt;button class="action-button"&gt&ltsvg&gt+&ltsvg&gt&lt/button&gt;
                   <br>
                   </code>
               </pre>

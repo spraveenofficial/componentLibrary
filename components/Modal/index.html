@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>List - Componently</title>
+    <title>Button - Componently</title>
     <!-- Add Favicon -->
     <link rel="shortcut icon" href="../../assets/favicon.ico" />
     <!-- Linking my stylesheet -->
@@ -60,12 +60,12 @@
           <a href="../Image">Image</a>
           <a href="../Input">Input</a>
           <a href="../Texts">Texts Utilites</a>
-          <a class="active" href="../List">List</a>
+          <a href="../List">List</a>
           <a href="../Navigation">Navigation</a>
           <a href="../Rating">Rating</a>
           <a href="../Snackbar">Snackbar</a>
           <a href="../Grid">Grid</a>
-          <a href="../Modal">Modal</a>
+          <a class="active" href="../Modal">Modal</a>
         </div>
       </div>
       <div class="right">
@@ -99,139 +99,111 @@
             <i class="fa fa-angle-right" aria-hidden="true"></i>
             <a href="../../pages/get-started">Components</a>
             <i class="fa fa-angle-right" aria-hidden="true"></i>
-            <a href="./index.html">List</a>
+            <a href="./index.html">Modal</a>
           </div>
           <div class="content_header">
-            <h1>List</h1>
+            <h1>Modal</h1>
           </div>
           <div class="content_data">
-            <p>List component is used to list the product/items.</p>
+            <p>
+              The modal component is a component that can be used to display
+              information to the user. It can be used to display information
+              that is not important to the user, but is important to the
+              application.
+            </p>
+
             <h2>Usages</h2>
-            <div class="usages flex flex-column">
-              <div class="ordered-list">
-                <ol>
-                  <li>Car</li>
-                  <li>Bike</li>
-                  <li>Cycle</li>
-                </ol>
+            <div class="usages">
+              <button onclick="toggleModal()" class="btn showModal">
+                Click to Open Modal
+              </button>
+              <div class="usages fancy-modal">
+                <div class="card-dismiss">
+                  <div class="card_header">
+                    <i onclick="hideModal()" class="fa fa-close"></i>
+                  </div>
+                  <div class="card-data">
+                    <h1>This is Modal</h1>
+                  </div>
+                </div>
               </div>
             </div>
-            <p>This is the default Texts from our component library.</p>
+            <p>
+              To achieve the above Normal Modal, you need to follow the
+              following code:
+            </p>
+            <h3>HTML Code:</h3>
             <div class="share_code">
               <pre>
                 <code class="language_html">
-                  < -- For Ordered List -->
+                  < -- For Modal Button -->
                   <br>
-                 &lt;div class="ordered-list"&gt; <br>
-                 &lt;ol&gt; <br>
-                 &lt;li&gt;Car&lt;/li&gt; <br>
-                 &lt;li&gt;Bike&lt;/li&gt; <br>
-                 &lt;li&gt;Cycle&lt;/li&gt; <br>
-                 &lt;/ol&gt; <br>
+                  &lt;button onclick="showModal()" class="btn"&gtClick to Open Modal&lt/button&gt;
+                  <br>
+                  < -- For Main Modal Component -->
+                  <br>
+                  &lt;div class="fancy-modal"&gt;
+                  <br>
+                  &lt;div class="card-dismiss"&gt;
+                  <br>
+                  &lt;div class="card_header"&gt;
+                  <br>
+                  &lt;i onclick="hideModal()" class="fa fa-close"&gt&lt/i&gt;
+                  <br>
+                  &lt;/div&gt;
+                  <br>
+                  &lt;div class="card-data"&gt;
+                  <br>
+                  &lt;h1&gtThis is Modal&lt/h1&gt;
+                  <br>
+                  &lt;/div&gt;
+                  <br>
                  &lt;/div&gt;
+                 <br>
+                 &lt;/div&gt;
+                  <br>
                   </code>
               </pre>
             </div>
             <hr />
-            <h1>Bullet List</h1>
-            <p>In this style, items will start with bullet.</p>
-            <h2>Usages</h2>
-            <div class="usages flex-column">
-              <ul class="bullet-list">
-                <li>Bullet Item 1</li>
-                <li>Bullet Item 2</li>
-                <li>Bullet Item 3</li>
-                <li>Bullet Item 4</li>
-              </ul>
-            </div>
+            <h3>Javascript Code:</h3>
             <p>
-              To achieve the list designs , you need to follow the following
-              code:
+              In order to acheive this Modal, you need to Apply this function in
+              your script file. eg. in your script.js file.
             </p>
             <div class="share_code">
               <pre>
-                <code class="language_html">
-                  < -- For Bullet List -->
-                  <br>
-                  &lt;ul class="bullet-list"&gt; <br>
-                  &lt;li&gt;Bullet Item 1&lt;/li&gt; <br>
-                  &lt;li&gt;Bullet Item 2&lt;/li&gt; <br>
-                  &lt;li&gt;Bullet Item 3&lt;/li&gt; <br>
-                  &lt;li&gt;Bullet Item 4&lt;/li&gt; <br>
-                  &lt;/ul&gt;
-                  </code>
-              </pre>
+                  <code class="javascript">
+                    // Declare Variable 
+                    <br>
+                    const modal = document.querySelector(".fancy-modal");
+                    <br>
+                    //Function to Show Modal
+                    <br>
+                    function showModal() {
+                    <br>
+                    modal.style.display = "block";
+                    <br>
+                    }
+                    <br>
+                    //Function to Hide Modal
+                    <br>
+                    function hideModal() {
+                    <br>
+                    modal.style.display = "none";
+                    <br>
+                    }
+                    </code>
+                </pre>
             </div>
             <hr />
-            <h1>Squared List</h1>
-            <p>In this predifined class list will start with sqaure dot.</p>
-            <h2>Usages</h2>
-            <div class="usages flex-column">
-              <ul class="square-list">
-                <li>Square Item 1</li>
-                <li>Square Item 2</li>
-                <li>Square Item 3</li>
-                <li>Square Item 4</li>
-              </ul>
-            </div>
-            <p>
-              To achieve the text designs , you need to follow the following
-              code:
-            </p>
-            <div class="share_code">
-              <pre>
-                <code class="language_html">
-                  < -- For Squared List -->
-                  <br>
-                  &lt;ul class="square-list"&gt; <br>
-                  &lt;li&gt;Square Item 1&lt;/li&gt; <br>
-                  &lt;li&gt;Square Item 2&lt;/li&gt; <br>
-                  &lt;li&gt;Square Item 3&lt;/li&gt; <br>
-                  &lt;li&gt;Square Item 4&lt;/li&gt; <br>
-                  &lt;/ul&gt;
-                  </code>
-              </pre>
-            </div>
-            <hr />
-            <h1>Stacked List</h1>
-            <p>You can style your list more attractive by adding own images.</p>
-            <h2>Usages</h2>
-            <div class="usages flex-column">
-              <ul class="img-list">
-                <li>
-                  <img class="avatar" src="../../assets/img.jpg" alt="img" />
-                  Hey, welcome to Componently.
-                </li>
-              </ul>
-            </div>
-            <p>
-              To achieve the stacked list , you need to follow the following
-              code:
-            </p>
-            <div class="share_code">
-              <pre>
-                <code class="language_html">
-                  < -- For Stacked List -->
-                  <br>
-                  &lt;ul class="img-list"&gt; <br>
-                  &lt;li&gt;<br>
-                  &lt;img class="avatar" src="url here" alt="img" /&gt; <br>
-                  Hey, welcome to componently. <br>
-                  &lt;/li&gt; <br>
-                  &lt;/ul&gt;
-                  </code>
-              </pre>
-            </div>
           </div>
         </div>
         <div class="pagination">
           <section class="prev_pagination flex_start">
+            <!-- <p>Prev</p> -->
             <i class="fa fa-angle-left" aria-hidden="true"></i>
-            <a href="../Texts">Texts</a>
-          </section>
-          <section class="next_pagination flex_end">
-            <a href="../Navigation">Navigation</a>
-            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <a href="../Grid">Grid</a>
           </section>
         </div>
       </div>
