@@ -13,8 +13,9 @@
 @import url("../components/Rating/style.css");
 @import url("../components/Snackbar/style.css");
 @import url("../components/Grid/style.css");
+@import url("../components/Modal/style.css");
 /* Added Colors which is given in PRD */
-:root  {
+:root {
   --primary-color: #ff3b30;
   --secondary-color: #fff6ea;
   --action-color: #3b82f6;
@@ -33,10 +34,10 @@
   --text-cyan: cyan;
 }
 
-.flex-row{
+.flex-row {
   flex-direction: row !important;
 }
 
-.align-center{
+.align-center {
   align-items: center;
 }

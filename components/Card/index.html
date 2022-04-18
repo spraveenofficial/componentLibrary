@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cards - Componently</title>
+    <!-- Add Favicon -->
+    <link rel="shortcut icon" href="../../assets/favicon.ico" />
     <!-- Linking my stylesheet -->
     <link rel="stylesheet" href="../../styles/style.css" />
     <!-- Linking Components CSS -->
@@ -30,11 +32,11 @@
       </div>
       <div class="menu">
         <i
-        onclick="changeTheme()"
-        class="fa fa-moon-o"
-        id="toggle-darkmode"
-        aria-hidden="true"
-      ></i>
+          onclick="changeTheme()"
+          class="fa fa-moon-o"
+          id="toggle-darkmode"
+          aria-hidden="true"
+        ></i>
         <a href="../../pages/get-started">Get Started</a>
         <i
           onclick="window.location='https://github.com/spraveenofficial/componentLibrary'"
@@ -48,7 +50,7 @@
       <div class="left">
         <div>
           <h1>Important Links</h1>
-          <a href="../get-started">Get Started</a>
+          <a href="../../pages/get-started">Get Started</a>
           <h1>Components</h1>
           <a href="../Avatar">Avatar</a>
           <a href="../Alert">Alert</a>
@@ -63,6 +65,7 @@
           <a href="../Rating">Rating</a>
           <a href="../Snackbar">Snackbar</a>
           <a href="../Grid">Grid</a>
+          <a href="../Modal">Modal</a>
         </div>
       </div>
       <div class="right">
@@ -86,6 +89,7 @@
               <a href="../Rating">Rating</a>
               <a href="../Snackbar">Snackbar</a>
               <a href="../Grid">Grid</a>
+              <a href="../Modal">Modal</a>
             </div>
           </div>
         </div>
@@ -173,10 +177,7 @@
             <div class="usages image_usage">
               <div class="card-dismiss">
                 <div class="card_header">
-                  <i
-                    onclick="document.querySelector('.card-dismiss').style.display = 'none'; "
-                    class="fa fa-close"
-                  ></i>
+                  <i class="fa fa-close"></i>
                 </div>
                 <div class="card-data">
                   <h1>This is dialog</h1>
@@ -190,19 +191,23 @@
             <div class="share_code">
               <pre>
                 <code class="language_html">
-                  < -- For Text with Image -->
+                  <!-- For Card with Dismiss -->
+                  &lt;div class="card-dismiss"&gt;
                   <br>
-                  &lt;div class="card-img"&gt;
+                  &lt;div class="card_header"&gt;
                   <br>
-                  &lt;img src="url" alt="image" /&gt;
+                  &lt;i class="fa fa-close"&gt&lt/i&gt;
                   <br>
-                  &lt;div class="card_data"&gt;
-                  <br>
-                  &lt;h1&gt;Hello World &lt;/h1&gt; <br>
-                  &lt;p&gt;This is paragraph.&lt;/p&gt;
-                  <br>
-                  &lt;/div&gt; <br>
                   &lt;/div&gt;
+                  <br>
+                  &lt;div class="card-data"&gt;
+                  <br>
+                  &lt;h1&gtThis is Card with Dismiss&lt/h1&gt;
+                  <br>
+                  &lt;/div&gt;
+                  <br>
+                  &lt;/div&gt;
+                 <br>
                   </code>
               </pre>
             </div>

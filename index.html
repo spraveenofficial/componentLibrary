@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - Componently</title>
+    <!-- Add favicon -->
+    <link rel="icon" href="assets/favicon.ico" />
     <!-- Linking my stylesheet -->
     <link rel="stylesheet" href="./styles/style.css" />
     <!-- Linking my component based stylesheet -->
@@ -28,9 +30,13 @@
         <h1><a href="">Componently</a></h1>
       </div>
       <div class="menu">
-        <i onclick="changeTheme()" class="fa fa-moon-o" id="toggle-darkmode" aria-hidden="true"></i>
+        <i
+          onclick="changeTheme()"
+          class="fa fa-moon-o"
+          id="toggle-darkmode"
+          aria-hidden="true"
+        ></i>
         <a href="./pages/get-started">Get Started</a>
-        <!-- <a href="./pages/components">Components</a> -->
         <i
           onclick="window.location='https://github.com/spraveenofficial/componentLibrary'"
           class="fa fa-github"
@@ -50,7 +56,12 @@
         <button class="btn btn-link btn-primary">
           <a href="/pages/get-started">Get Started</a>
         </button>
-        <button class="btn btn-secondary">Documentation</button>
+        <button class="btn btn-link">
+          <i class="fa fa-github"> </i>
+          <a href="https://github.com/spraveenofficial/componentLibrary"
+            >Github</a
+          >
+        </button>
       </div>
       <div class="share_code share">
         <pre>
